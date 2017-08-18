@@ -1,0 +1,77 @@
+body{
+    background: url("../images/geren_bg_02.png") no-repeat center center/100% 100%;
+}
+em{
+    font-style: normal;
+}
+.top_info{
+    margin: 1% 0 0;
+    text-align: center;
+}
+.top_info .geren_logo{
+    width:25%;
+    display: block;
+    margin: 0 auto;
+}
+.top_info p{
+    color: #360000;
+}
+.top_info p.name{
+    font-size: 16px;
+}
+.top_info p.num{
+    font-size: 12px;
+}
+.user_info{
+    position: absolute;
+    top: 33%;
+    left: 0;
+    width: 100%;
+}
+.user_info ul{
+    width: 80%;
+    margin: 0 auto;
+}
+.user_info li{
+    padding: 0 5%;
+    border-bottom: 1px solid rgba(152,106,54,0.5);
+    line-height: 5.5vh;
+    font-size: 14px;
+    overflow: hidden;
+}
+.user_info li:last-child{
+    border-bottom: none;
+}
+.user_info li .title{
+    color: #360000;
+    display: block;
+    float: left;
+    width: 30%;
+}
+.user_info li .info{
+    color: #986a36;
+    display: block;
+    float: left;
+    width: 70%;
+    text-align: right;
+}
+.jifen_num,.jinbi_num{
+    color: #de4c3f;
+}
+.tuichu{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 2%;
+}
+.tuichu a{
+    display: block;
+    width:26%;
+    height: 6vh;
+    line-height: 6.5vh;
+    background: url("../images/dati_btn_bg_12.png") no-repeat left top/100% 100%;
+    color: #ffdfa4;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 auto;
+}

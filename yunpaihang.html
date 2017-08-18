@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>云排行</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/yunpaihang.css">
+</head>
+<body>
+<div class="jiangbei"><img src="images/jiangbei_03.png"></div>
+<div class="bang_img">
+    <ul>
+        <li><img src="images/guang_1.png"> </li>
+        <li><img src="images/guang_2.png"> </li>
+        <li><img src="images/guang_3.png"> </li>
+        <li><img src="images/guang_4.png"> </li>
+    </ul>
+</div>
+<div class="mingci">
+    <table>
+        <thead>
+            <tr>
+                <th>名次</th>
+                <th>姓名</th>
+                <th>积分</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="images/rank_1.png"> </td>
+                <td>工会生产部</td>
+                <td>7820</td>
+            </tr>
+            <tr>
+                <td><img src="images/rank_2.png"> </td>
+                <td>工会生产部</td>
+                <td>7820</td>
+            </tr>
+            <tr>
+                <td><img src="images/rank_3.png"> </td>
+                <td>工会生产部</td>
+                <td>7820</td>
+            </tr>
+            <tr>
+                <td class="rank"><img src="images/rank_4.png"><i class="rank_num">4</i> </td>
+                <td>工会生产部</td>
+                <td>7820</td>
+            </tr>
+            <tr>
+                <td class="rank"><img src="images/rank_4.png"><i class="rank_num">5</i> </td>
+                <td>工会生产部</td>
+                <td>7820</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+    $(function () {
+        var num=0;
+        setInterval(lunbo,500);
+        function lunbo() {
+            num++;
+            if(num>3){
+                num=0
+            }
+            $(".bang_img li").hide();
+            $(".bang_img li").eq(num).show();
+        }
+    })
+</script>
+</body>
+</html>

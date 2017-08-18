@@ -1,0 +1,60 @@
+body{
+    background: url("../images/choose_bg_02.png") no-repeat left top/100% 100%;
+}
+.choose_title{
+    width:40%;
+    padding-left: 5%;
+    margin: 8% 0 5%;
+}
+.choose_title img{
+    width:100%;
+}
+.choose_con{
+    width:88%;
+    margin: 0 auto;
+    position: relative;
+}
+.choose_con ul{
+    padding: 15% 0 0;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.choose_con ul li{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    margin: 5% 0;
+}
+.choose_con ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.choose_con ul li img{
+    width: 70%;
+}
+.choose_con ul li p{
+    width: 100%;
+    font-size: 12px;
+    color: #462800;
+}
+.peopel{
+    width:79px;
+    height: 66px;
+    background: url("../images/small_people_03.png") no-repeat left top/100% 100%;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    animation: move 2s infinite linear;
+    -moz-animation: move 2s infinite linear;
+    -webkit-animation: move 2s infinite linear;
+    -o-animation: move 2s infinite linear;
+    transition: move 2s;
+}
+@keyframes move {
+    0% {bottom: 0}
+    50%{bottom: 5px}
+    100%{bottom:0;}
+}

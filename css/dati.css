@@ -1,0 +1,262 @@
+body{
+    font-family: "黑体";
+}
+i{
+    font-style: normal;
+}
+.dati_info{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 25px;
+    background: url("../images/dati_info_bg.png") no-repeat left top/100% 100%;
+    line-height: 25px;
+    z-index: 9;
+}
+.dati_info .dati_time{
+    float: left;
+    padding-left: 8%;
+}
+.dati_info .dati_panduan{
+    float: right;
+    padding-right: 5%;
+}
+.error_num{
+    color: #c70909;
+}
+.dati{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../images/dati_bg_02.png") no-repeat left top/100% 100%;
+}
+.timu{
+    width: 68%;
+    height: 42%;
+    position: absolute;
+    left: 50%;
+    top: 7%;
+    transform: translateX(-50%);
+}
+.timu h3{
+    font-size: 20px;
+    color: #a80000;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 10%;
+}
+.timu .ti_txt{
+    line-height: 26px;
+    font-size: 14px;
+    color: #360000;
+}
+.timu .ti_j{
+    width: 100%;
+    text-align: right;
+    color: #a80000;
+    margin-top: 10%;
+    position: absolute;
+    bottom: 10%;
+    font-size: 12px;
+}
+.choose{
+    position: absolute;
+    top: 55%;
+    width: 77%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.choose ul li{
+    margin-bottom: 7%;
+    position: relative;
+}
+.choose ul li img{
+    width: 100%;
+    display: block;
+}
+.choose ul li .duihao{
+    display: block;
+    width:44px;
+    height: 40px;
+    background: url("../images/duihao_03.png") no-repeat left top/100% 100%;
+    position: absolute;
+    right: 0;
+    bottom:3px;
+    z-index:9;
+    display: none;
+}
+.dati_btn{
+    width: 85%;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+.dati_btn  a{
+    display: block;
+    width:32%;
+    height: 6vh;
+    line-height: 6.5vh;
+    background: url("../images/dati_btn_bg_12.png") no-repeat left top/100% 100%;
+    color: #ffdfa4;
+    text-align: center;
+    font-size: 14px;
+}
+/*闯关说明*/
+.dati_shuoming{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/shuoming_bg_02.png") no-repeat left top/100% 100%;
+    display: none;
+}
+.shuoming_txt{
+    width: 65%;
+    position: absolute;
+    left: 50%;
+    top: 19%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    height: 56%;
+    line-height: 24px;
+}
+.know_btn{
+    width:27%;
+    height: 6vh;
+    line-height: 6vh;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+    background: url("../images/dati_btn_bg_12.png") no-repeat left top/100% 100%;
+    text-align: center;
+    color: #ffdfa4;
+}
+/*金蛋*/
+.jindan{
+    width:100%;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+.wei_open img.dan{
+    width: 83%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 16%;
+}
+.wei_open img.chuizi{
+    width: 30%;
+}
+.yi_open{
+    position: relative;
+    display: none;
+}
+.yi_open img{
+    width: 100%;
+    mix-blend-mode: screen;
+}
+.yi_open p{
+    color: #cd0000;
+    text-shadow:#ffd800 1px 0 0,#ffd800 0 1px 0,#ffd800 -1px 0 0,#ffd800 0 -1px 0;
+    -webkit-text-shadow:#ffd800 1px 0 0,#ffd800 0 1px 0,#ffd800 -1px 0 0,#ffd800 0 -1px 0;
+    -moz-text-shadow:#ffd800 1px 0 0,#ffd800 0 1px 0,#ffd800 -1px 0 0,#ffd800 0 -1px 0;
+    font-size: 24px;
+    position: absolute;
+    top:8%;
+    width: 100%;
+    text-align: center;
+}
+.overlayer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+.chuizi {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    width: 30%;
+    z-index: 10002;
+    -moz-transform-origin: bottom right;
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom 100%;
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    -moz-animation: chuizi 1.5s ease infinite ;
+    -webkit-animation: chuizi 1.5s ease infinite ;
+    animation: chuizi 1.5s ease infinite ;
+}
+@keyframes chuizi {
+    0% {
+        -moz-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+    30% {
+        -moz-transform: rotate(-26deg);
+        -ms-transform: rotate(-26deg);
+        -webkit-transform: rotate(-26deg);
+        transform: rotate(-26deg);
+    }
+    100% {
+        -moz-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+}
+@-webkit-keyframes chuizi {
+    0% {
+        -moz-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+    30% {
+        -moz-transform: rotate(-25deg);
+        -ms-transform: rotate(-25deg);
+        -webkit-transform: rotate(-25deg);
+        transform: rotate(-25deg);
+    }
+    100% {
+        -moz-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+}
+@-moz-keyframes chuizi {
+    0% {
+        -moz-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+    30% {
+        -moz-transform: rotate(-25deg);
+        -ms-transform: rotate(-25deg);
+        -webkit-transform: rotate(-25deg);
+        transform: rotate(-25deg);
+    }
+    100% {
+        -moz-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+}

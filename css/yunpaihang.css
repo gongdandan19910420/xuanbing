@@ -1,0 +1,68 @@
+body{
+    background: url("../images/paihang_bg_02.png") no-repeat left top/100% 100%;
+}
+.jiangbei{
+    width: 75%;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.jiangbei img{
+    width: 100%;
+}
+.bang_img{
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    transform: translateX(-50%);
+}
+.bang_img ul li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.bang_img ul li:first-child{
+    display: block;
+}
+.bang_img ul li img{
+    width: 100%;
+}
+.mingci{
+    width: 58%;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "黑体";
+    text-align: center;
+}.mingci table{
+    width: 100%;
+ }
+.mingci thead tr{
+    color: #a80000;
+    font-size: 16px;
+    line-height: 6vh;
+}
+.mingci img{
+    display: block;
+    width: 31px;
+    height: 38px;
+}
+.mingci tbody tr td{
+    padding: 5px 0;
+    font-size: 14px;
+    color: #360000;
+}
+.rank{
+    position: relative;
+}
+.rank_num{
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    color: #fff;
+    font-size: 15px;
+}
