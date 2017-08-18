@@ -147,6 +147,14 @@ i{
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
+    height: 45%;
+}
+.wei_open{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }
 .wei_open img.dan{
     width: 83%;
@@ -158,12 +166,25 @@ i{
     width: 30%;
 }
 .yi_open{
-    position: relative;
+    position: absolute;
     display: none;
-}
-.yi_open img{
     width: 100%;
-    mix-blend-mode: screen;
+    height: 100%;
+}
+.yi_open img.dan_kai{
+    width: 80%;
+    position: absolute;
+    top: 35%;
+    left: 48%;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+.yi_open img.dan_guang{
+    width: 150%;
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .yi_open p{
     color: #cd0000;
@@ -175,6 +196,7 @@ i{
     top:8%;
     width: 100%;
     text-align: center;
+    z-index: 99;
 }
 .overlayer{
     width: 100%;

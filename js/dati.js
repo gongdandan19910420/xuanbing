@@ -57,11 +57,11 @@ $(function () {
                 //console.log(data);
                 var arr=["一","二","三","四","五","六","七","八","九","十","十一","十二","十三","十四","十五"];
                 num++;
-                $(".ti_txt").html(data.txt);
-                $(".tihao").html(arr[num]);
                 if(num==5){
                     $(".next_ti").attr("href","success.html")
                 }
+                $(".ti_txt").html(data.txt);
+                $(".tihao").html(arr[num]);
             },
             error:function(data,status){
                 if(status=='timeout'){
