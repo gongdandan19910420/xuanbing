@@ -33,7 +33,7 @@ em{
     margin: 0 auto;
 }
 .user_info li{
-    padding: 0 5%;
+    padding: 0 0 0 5%;
     border-bottom: 1px solid rgba(152,106,54,0.5);
     line-height: 5.5vh;
     font-size: 14px;
@@ -50,10 +50,14 @@ em{
 }
 .user_info li .info{
     color: #986a36;
-    display: block;
-    float: left;
-    width: 70%;
+    /*display: block;
+    float: left;*/
+    width: 60%;
     text-align: right;
+    background: none;
+    border: none;
+    line-height: 5.5vh;
+    padding: 0 5%;
 }
 .jifen_num,.jinbi_num{
     color: #de4c3f;
@@ -67,6 +71,28 @@ em{
 .tuichu a{
     display: block;
     width:26%;
+    height: 6vh;
+    line-height: 6.5vh;
+    background: url("../images/dati_btn_bg_12.png") no-repeat left top/100% 100%;
+    color: #ffdfa4;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 auto;
+}
+.edit_btn{
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    transform: translateX(-50%);
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+.edit_btn a{
+    display: block;
+    float: left;
+    width:43%;
     height: 6vh;
     line-height: 6.5vh;
     background: url("../images/dati_btn_bg_12.png") no-repeat left top/100% 100%;
