@@ -57,6 +57,36 @@
 <div class="tuichu">
     <a href="#" class="tuichu_btn">退出登录</a>
 </div>
+<div class="login_out">
+    <p>您确定要退出登录吗？</p>
+    <div class="login_btn">
+        <a href="#" class="quxiao">取消</a>
+        <a href="#" class="queding">确定</a>
+    </div>
+</div>
+<div class="over_layer"></div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+    $(function () {
+        //退出登录
+        $(".tuichu_btn").click(function () {
+            $(".login_out").fadeIn("fast");
+            $(".nav").fadeOut("fast");
+            $(".over_layer").show();
+        });
+        //取消
+        $(".quxiao").click(function () {
+            $(".login_out").fadeOut("fast");
+            $(".over_layer").hide();
+        });
+        //确定
+        $(".queding").click(function () {
+            $(".login_out").fadeOut("fast");
+            $(".over_layer").hide();
+        })
 
+
+    })
+</script>
 </body>
 </html>

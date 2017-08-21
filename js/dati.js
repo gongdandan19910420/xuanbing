@@ -57,11 +57,29 @@ $(function () {
                 //console.log(data);
                 var arr=["一","二","三","四","五","六","七","八","九","十","十一","十二","十三","十四","十五"];
                 num++;
-                if(num==5){
+                if(num==1){
                     $(".next_ti").attr("href","success.html")
                 }
                 $(".ti_txt").html(data.txt);
                 $(".tihao").html(arr[num]);
+                $(".tixing").html(data.type);
+                $(".jibie").html("（"+data.jibie+"）");
+                var html="";
+                for(var i=0;i<data.xuanxiang.length;i++){
+                    var d=data.xuanxiang[i];
+                    if(data.type=="多选题"){
+                        html+='<li class="cx-checkbox">'
+                            +'<div class="ico-0"><img src="images/chooseimg_'+(i+1)+'.png"> </div>'
+                            +'<label><input type="checkbox" name="sex" value="A">'+d+'</label>'
+                            +'</li>'
+                    }else {
+                        html+='<li class="cx-radio">'
+                            +'<div class="ico-0"><img src="images/chooseimg_'+(i+1)+'.png"> </div>'
+                            +'<label><input type="radio" name="sex" value="A">'+d+'</label>'
+                            +'</li>'
+                    }
+                }
+                $(".choose ul").html(html)
             },
             error:function(data,status){
                 if(status=='timeout'){

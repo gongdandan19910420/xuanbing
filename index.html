@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <title>网上练兵</title>
+    <link rel="stylesheet" href="css/leaves.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -33,12 +34,12 @@
 </div>
 <div class="nav">
     <ul>
-        <li><a href="#"><img src="images/nav_01.png"><span>云练兵</span></a></li>
+        <li><a href="choose_gongzhong.html"><img src="images/nav_01.png"><span>云练兵</span></a></li>
         <li><a href="yunpaihang.html"><img src="images/nav_02.png"><span>云排行</span></a></li>
         <li><a href="yunmenzhen.html"><img src="images/nav_03.png"><span>云门诊</span></a></li>
         <li><a href="yunjianyi.html"><img src="images/nav_04.png"><span>云建议</span></a></li>
-        <li><a href="#"><img src="images/nav_06.png"><span>云账户</span></a></li>
-        <li><a href="#"><img src="images/nav_05.png"><span>退出登录</span></a></li>
+        <li><a href="gerenzhongxin.html"><img src="images/nav_06.png"><span>云账户</span></a></li>
+        <li class="tuichu"><a href="#"><img src="images/nav_05.png"><span>退出登录</span></a></li>
     </ul>
     <div class="arrow"></div>
 </div>
@@ -46,10 +47,27 @@
 <div class="music">
     <audio src="images/m1.mp3" autoplay loop id="music"></audio>
 </div>
-<div class="shuye_top"><img src="images/shuye_1.png"></div>
-<div class="shuye_bot"><img src="images/shuye_2.png"></div>
+<!--<div class="shuye_top"><img src="images/shuye_1.png"></div>
+<div class="shuye_bot"><img src="images/shuye_2.png"></div>-->
+<div id="container">
+    <!-- The container is dynamically populated using the init function in leaves.js -->
+    <!-- Its dimensions and position are defined using its id selector in leaves.css -->
+    <div id="leafContainer"></div>
+    <!-- its appearance, dimensions, and position are defined using its id selector in leaves.css -->
+</div>
+
+
+<div class="login_out">
+    <p>您确定要退出登录吗？</p>
+    <div class="login_btn">
+        <a href="#" class="quxiao">取消</a>
+        <a href="#" class="queding">确定</a>
+    </div>
+</div>
+<div class="over_layer"></div>
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/kxbdSuperMarquee.js"></script>
+<script src="js/leaves.js"></script>
 <script>
     $(function () {
         //导航按钮
@@ -100,9 +118,25 @@
                 $(this).addClass('play');
                 $(this).find("img").attr("src","images/yuan_btn_2.png");
             }
+        });
+        //退出登录
+        $(".tuichu").click(function () {
+            $(".login_out").fadeIn("fast");
+            $(".nav").fadeOut("fast");
+            $(".over_layer").show();
+        });
+        //取消
+        $(".quxiao").click(function () {
+            $(".login_out").fadeOut("fast");
+            $(".over_layer").hide();
+        });
+        //确定
+        $(".queding").click(function () {
+            $(".login_out").fadeOut("fast");
+            $(".over_layer").hide();
         })
 
-        $.AutomLeafStart({leafsfolder:"images/",howmanyimgsare:8,initialleafs:10,maxYposition:-10,multiplyclick:true,multiplynumber:2,infinite:true,fallingsequence:4000});
+
     })
 </script>
 </body>

@@ -65,13 +65,62 @@ i{
 .choose{
     position: absolute;
     top: 55%;
-    width: 77%;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
 }
 .choose ul li{
-    margin-bottom: 7%;
+    /*margin-bottom: 7%;*/
     position: relative;
+    line-height: 20px;
+    border: 2px solid #fff;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    margin: 10px 20px 0 50px;
+    padding: 4px;
+    text-align: center;
+}
+.choose ul li .ico-0{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -25px;
+    top: -1px;
+}
+.choose ul li .ico-0 img{
+    display: block;
+    width: 100%;
+}
+.choose ul li label{
+    display: inline-block;
+    float: none;
+    width: 100%;
+    padding-right: 58px;
+    color: #360000;
+    font-size: 12px;
+}
+.choose ul li input{
+    position: absolute;
+    top: 5px;
+    right: 1px;
+    display: inline-block;
+    width: 28px;
+    height: 26px;
+    border: 0;
+    outline: 0!important;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+.choose ul li input:checked:before{
+    content:"";
+    display: block;
+    width:44px;
+    height: 40px;
+    background: url("../images/duihao_03.png") no-repeat left top/100% 100%;
+    position: absolute;
+    right: 0;
+    bottom:3px;
+    z-index:9;
 }
 .choose ul li img{
     width: 100%;
@@ -92,7 +141,7 @@ i{
     width: 85%;
     position: absolute;
     left: 50%;
-    top: 80%;
+    top: 90%;
     transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
@@ -172,20 +221,20 @@ i{
     height: 100%;
 }
 .yi_open img.dan_kai{
-    width: 80%;
+    width: 93%;
     position: absolute;
-    top: 35%;
+    top: 4%;
     left: 48%;
     transform: translateX(-50%);
     z-index: 9;
 }
-.yi_open img.dan_guang{
+/*.yi_open img.dan_guang{
     width: 150%;
     position: absolute;
     top: -40%;
     left: 50%;
     transform: translateX(-50%);
-}
+}*/
 .yi_open p{
     color: #cd0000;
     text-shadow:#ffd800 1px 0 0,#ffd800 0 1px 0,#ffd800 -1px 0 0,#ffd800 0 -1px 0;
