@@ -1,11 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+i{
+    font-style: normal;
+}
+body,html{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
 body{
-    background: url("../images/geren_bg_02.png") no-repeat center center/100% 100%;
+    overflow-y: auto;
+}
+.bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 em{
     font-style: normal;
 }
+.wrapper{
+    width: 100%;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .top_info{
-    margin: 1% 0 0;
+    margin: 5px 0 0;
     text-align: center;
 }
 .top_info .geren_logo{
@@ -23,19 +56,22 @@ em{
     font-size: 12px;
 }
 .user_info{
-    position: absolute;
+   /* position: absolute;
     top: 33%;
-    left: 0;
-    width: 100%;
+    left: 0;*/
+    width: 90%;
+    margin: 10px auto 0;
+    background: url("../images/geren_juanzhou.png") no-repeat left top/100% 100%;
 }
 .user_info ul{
     width: 80%;
     margin: 0 auto;
+    padding: 40px 0;
 }
 .user_info li{
     padding: 0 0 0 5%;
     border-bottom: 1px solid rgba(152,106,54,0.5);
-    line-height: 5.5vh;
+    line-height: 26px;
     font-size: 14px;
     overflow: hidden;
 }
@@ -56,23 +92,20 @@ em{
     text-align: right;
     background: none;
     border: none;
-    line-height: 5.5vh;
+    line-height: 26px;
     padding: 0 5%;
 }
 .jifen_num,.jinbi_num{
     color: #de4c3f;
 }
 .tuichu{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 2%;
+   margin-top: 20px;
 }
 .tuichu a{
     display: block;
     width:26%;
-    height: 6vh;
-    line-height: 6.5vh;
+    height: 32px;
+    line-height: 32px;
     background: url("../images/dati_btn_bg_12.png") no-repeat left top/100% 100%;
     color: #ffdfa4;
     text-align: center;
@@ -80,11 +113,8 @@ em{
     margin: 0 auto;
 }
 .edit_btn{
-    position: absolute;
-    left: 50%;
-    bottom: 2%;
-    transform: translateX(-50%);
     width: 60%;
+    margin: 20px auto 0;
     display: flex;
     justify-content: space-between;
     display: none;
@@ -93,8 +123,8 @@ em{
     display: block;
     float: left;
     width:43%;
-    height: 6vh;
-    line-height: 6.5vh;
+    height: 32px;
+    line-height: 32px;
     background: url("../images/dati_btn_bg_12.png") no-repeat left top/100% 100%;
     color: #ffdfa4;
     text-align: center;

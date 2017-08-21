@@ -8,59 +8,63 @@
     <link rel="stylesheet" href="css/gerenzhongxin.css">
 </head>
 <body>
-<div class="top_info">
-    <img src="images/geren_logo_03.png" class="geren_logo">
-    <p class="name"><span class="type">工会生产部（</span><span class="type_num">45029</span>）</p>
-    <p class="num"><span>积分：</span><em class="jifen_num">9820</em><span class="jinbi">金币：</span><em class="jinbi_num">7820</em></p>
-</div>
-<div class="user_info">
-    <ul>
-        <li>
-            <span class="title">所在单位</span>
-            <input type="text" class="info" value="河北邯郸">
-        </li>
-        <li>
-            <span class="title">我的邮箱</span>
-            <input type="text" class="info" value="347924461@qq.com">
-        </li>
-        <li>
-            <span class="title">身份证号</span>
-            <input type="text" class="info" value="13000000000000000">
-        </li>
-        <li>
-            <span class="title">首选工种</span>
-            <input type="text" class="info" value="计算机">
-        </li>
-        <li>
-            <span class="title">常用地址</span>
-            <input type="text" class="info" value="朝阳区">
-        </li>
-        <li>
-            <span class="title">性别</span>
-            <input type="text" class="info" value="男">
-        </li>
-        <li>
-            <span class="title">联系方式</span>
-            <input type="text" class="info" value="1000000000">
-        </li>
-        <li>
-            <span class="title">我的学历</span>
-            <input type="text" class="info" value="大专">
-        </li>
-        <li>
-            <span class="title">平台奖区</span>
-            <input type="text" class="info" value="未知">
-        </li>
+<img src="images/bg.png" class="bg">
+<div class="wrapper">
+    <div class="top_info">
+        <img src="images/geren_logo_03.png" class="geren_logo">
+        <p class="name"><span class="type">工会生产部（</span><span class="type_num">45029</span>）</p>
+        <p class="num"><span>积分：</span><em class="jifen_num">9820</em><span class="jinbi">金币：</span><em class="jinbi_num">7820</em></p>
+    </div>
+    <div class="user_info">
+        <ul>
+            <li>
+                <span class="title">所在单位</span>
+                <input type="text" class="info" value="河北邯郸">
+            </li>
+            <li>
+                <span class="title">我的邮箱</span>
+                <input type="text" class="info" value="347924461@qq.com">
+            </li>
+            <li>
+                <span class="title">身份证号</span>
+                <input type="text" class="info" value="13000000000000000">
+            </li>
+            <li>
+                <span class="title">首选工种</span>
+                <input type="text" class="info" value="计算机">
+            </li>
+            <li>
+                <span class="title">常用地址</span>
+                <input type="text" class="info" value="朝阳区">
+            </li>
+            <li>
+                <span class="title">性别</span>
+                <input type="text" class="info" value="男">
+            </li>
+            <li>
+                <span class="title">联系方式</span>
+                <input type="text" class="info" value="1000000000">
+            </li>
+            <li>
+                <span class="title">我的学历</span>
+                <input type="text" class="info" value="大专">
+            </li>
+            <li>
+                <span class="title">平台奖区</span>
+                <input type="text" class="info" value="未知">
+            </li>
 
-    </ul>
+        </ul>
+    </div>
+    <div class="tuichu">
+        <a href="#" class="tuichu_btn">退出登录</a>
+    </div>
+    <div class="edit_btn">
+        <a href="#" class="sure">确定修改</a>
+        <a href="#" class="close">取消</a>
+    </div>
 </div>
-<div class="tuichu">
-    <a href="#" class="tuichu_btn">退出登录</a>
-</div>
-<div class="edit_btn">
-    <a href="#" class="sure">确定修改</a>
-    <a href="#" class="close">取消</a>
-</div>
+
 <div class="login_out">
     <p>您确定要退出登录吗？</p>
     <div class="login_btn">
@@ -92,7 +96,12 @@
         $(".info").focus(function () {
             $(".tuichu").hide();
             $(".edit_btn").css("display","flex");
-        });
+            var top=$(this).offset().top;
+            $('.wrapper').animate({
+                top: -top/2
+            }, 200);
+            //$('.wrapper').css("top",-top)
+    });
         $(".close").click(function () {
             $(".tuichu").show();
             $(".edit_btn").css("display","none");
@@ -101,7 +110,11 @@
             $(".tuichu").show();
             $(".edit_btn").css("display","none");
         });
-
+        $(".info").blur(function () {
+            $('.wrapper').animate({
+                top: 0
+            }, 200);
+        })
     })
 </script>
 </body>
