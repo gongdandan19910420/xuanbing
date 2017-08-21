@@ -54,6 +54,7 @@ a{
     top:76%;
     text-align: center;
     width: 100%;
+    z-index: 9;
 }
 .btn a{
     display: block;
@@ -88,7 +89,7 @@ a{
     background: #313c36;
     border-radius: 5px;
     padding: 10px;
-    z-index: 9;
+    z-index: 99;
     display: none;
 }
 .nav li{
