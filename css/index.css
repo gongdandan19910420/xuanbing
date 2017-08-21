@@ -10,9 +10,9 @@ a{
     position: absolute;
     top: 6%;
     text-align: center;
-}
-.top_txt img{
-    width: 32.4%;
+    color: #a80000;
+    font-size: 22px;
+    font-weight: bold;
 }
 .logo{
     width: 100%;
