@@ -28,13 +28,32 @@ i{
     overflow-y: auto;
 }
 .bot_nav{
+    width: 100%;
     padding: 10px 2% 0;
-    overflow: hidden;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    *overflow:hidden;
+    *zoom:1;
+}
+.bot_nav:after{
+    display: table;
+    content:"";
+    width:0;
+    clear: both;
 }
 .yuan_btn{
     width: 135px;
-    overflow: hidden;
     float: right;
+    position: relative;
+    *overflow:hidden;
+    *zoom:1;
+}
+.yuan_btn:after{
+    display: table;
+    content:"";
+    width:0;
+    clear: both;
 }
 .yuan_btn>a{
     display: block;
@@ -45,14 +64,15 @@ i{
 }
 .yuan_btn a img{
     width: 100%;
+    display: block;
 }
 .yuan_btn a.nav_btn{
     position: relative;
 }
 .nav{
     position: absolute;
-    bottom: 21%;
-    right: 2px;
+    bottom: 60px;
+    right: 0;
     background: #313c36;
     border-radius: 5px;
     padding: 10px;
@@ -68,16 +88,26 @@ i{
 }
 .nav li a{
     color: #fff;
+    font-size: 1.2rem;
+    display: block;
+    overflow: hidden;
 }
 .nav li img{
     width:25px;
     vertical-align: middle;
     padding: 0 6px 0 3px;
+    display: block;
+    float: left;
+    margin-top: 4px;
+}
+.nav li span{
+    display: block;
+    float: left;
 }
 .arrow{
     position: absolute;
     bottom: -9px;
-    right:20px;
+    right:13px;
     width: 13px;
     height: 9px;
     background: url("../images/arrow.png") no-repeat left top/100%;
@@ -163,4 +193,10 @@ i{
     background: rgba(0,0,0,0.5);
     display: none;
     z-index: 9;
+}
+@media screen and (min-width: 420px){
+    .bot_nav{
+        position: static;
+        margin-bottom: 10px;
+    }
 }
