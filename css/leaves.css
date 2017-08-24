@@ -72,6 +72,8 @@ body
     height: 100%;
     width: 100%;
     overflow: hidden;
+    left: 0;
+    top: 0;
 }
 
 /* Defines the position and dimensions of the leafContainer div */

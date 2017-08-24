@@ -1,8 +1,6 @@
-body{
-    background: url("../images/choose_bg_02.png") no-repeat left top/100% 100%;
-}
+
 .choose_title{
-    width:40%;
+    width:45%;
     padding-left: 5%;
     margin: 8% 0 5%;
 }
@@ -10,9 +8,11 @@ body{
     width:100%;
 }
 .choose_con{
-    width:88%;
+    width:93%;
     margin: 0 auto;
     position: relative;
+    background: url("../images/gongzhong_juanzhou_03.png") no-repeat left top/100% 100%;
+    padding-bottom: 17%;
 }
 .choose_con ul{
     padding: 15% 0 0;
@@ -24,7 +24,7 @@ body{
     float: left;
     width: 33.3%;
     text-align: center;
-    margin: 5% 0;
+    margin: 5px 0;
 }
 .choose_con ul li a{
     display: block;
@@ -41,9 +41,7 @@ body{
     color: #462800;
 }
 .peopel{
-    width:79px;
-    height: 66px;
-    background: url("../images/small_people_03.png") no-repeat left top/100% 100%;
+    width:27%;
     position: absolute;
     bottom: 0;
     right: 15%;
@@ -53,8 +51,11 @@ body{
     -o-animation: move 2s infinite linear;
     transition: move 2s;
 }
+.peopel img{
+    width: 100%;
+}
 @keyframes move {
-    0% {bottom: 0}
-    50%{bottom: 5px}
-    100%{bottom:0;}
+    0% {bottom: 15%;}
+    50%{bottom: 17%;}
+    100%{bottom:15%;}
 }

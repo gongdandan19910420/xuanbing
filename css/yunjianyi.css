@@ -20,14 +20,14 @@ body{
 .top_btn a{
     display: block;
     width:32%;
-    height: 6vh;
-    line-height: 6.5vh;
+    height: 32px;
+    line-height: 32px;
     background: url("../images/dati_btn_bg_12.png") no-repeat left top/100% 100%;
     color: #ffdfa4;
     text-align: center;
     font-size: 14px;
 }
-.top_btn a.active{
+.top_btn a.mui-active{
     background: url("../images/liang_btn_bg.png") no-repeat left top/100% 100%;
 }
 .jianyi_list{

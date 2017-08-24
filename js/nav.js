@@ -15,7 +15,7 @@ $(function () {
     var oMusic=document.getElementById('music');
     $('.music_btn').click(function(){
         if($(this).hasClass('play')){
-            $(this).removeClass();
+            $(this).removeClass("play");
             $(this).find("img").attr("src","images/yuan_btn_close_1.png");
             oMusic.pause();
         }else{

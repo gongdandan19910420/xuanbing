@@ -4,58 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <title>网上练兵</title>
-    <link rel="stylesheet" href="css/leaves.css">
+    <link rel="stylesheet" href="css/mui.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<p class="top_txt">邯郸市职工</p>
-<div class="logo"><img src="images/logo.png"></div>
-<p class="bot_txt"><img src="images/index_txt.png"></p>
-<div class="qima"><img src="images/qima.png"></div>
-<div class="btn"><a href="choose_gongzhong.html" class="start_btn"><img src="images/index_btn.png"></a></div>
-<div class="yuan_btn">
-    <a href="javascript:;" class="music_btn play"><img src="images/yuan_btn_1.png"> </a>
-    <a href="javascript:;" class="notice_btn play"><img src="images/yuan_btn_2.png"> </a>
-    <a href="javascript:;" class="nav_btn"><img src="images/yuan_btn_3.png"> </a>
-</div>
-<div class="notice">
-    <div class="laba"></div>
-    <div id="marquee5" class="tongzhi">
-        <ul>
-            <li><a href="#">新闻公告一新闻公告一新闻公告一新闻公告一</a></li>
-            <li><a href="#">新闻公告二新闻公告二新闻公告二新闻公告二</a></li>
-            <li><a href="#">新闻公告三新闻公告三新闻公告三新闻公告三</a></li>
-            <li><a href="#">新闻公告四新闻公告四新闻公告四新闻公告四</a></li>
-            <li><a href="#">新闻公告五新闻公告五新闻公告五新闻公告五</a></li>
-            <li><a href="#">新闻公告六新闻公告六新闻公告六新闻公告六</a></li>
-        </ul>
+<div class="mui-content">
+    <p class="top_txt">邯郸市职工</p>
+    <div class="logo"><img src="images/logo.png"></div>
+    <p class="bot_txt"><img src="images/index_txt.png"></p>
+    <div class="qima"><img src="images/qima.png"></div>
+    <div class="btn"><a href="choose_gongzhong.html" class="start_btn"><img src="images/index_btn.png"></a></div>
+    <div class="bot_nav">
+        <div class="notice">
+            <div class="laba"></div>
+            <div id="marquee5" class="tongzhi">
+                <ul>
+                    <li><a href="#">新闻公告一新闻公告一新闻公告一新闻公告一</a></li>
+                    <li><a href="#">新闻公告二新闻公告二新闻公告二新闻公告二</a></li>
+                    <li><a href="#">新闻公告三新闻公告三新闻公告三新闻公告三</a></li>
+                    <li><a href="#">新闻公告四新闻公告四新闻公告四新闻公告四</a></li>
+                    <li><a href="#">新闻公告五新闻公告五新闻公告五新闻公告五</a></li>
+                    <li><a href="#">新闻公告六新闻公告六新闻公告六新闻公告六</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="yuan_btn">
+            <a href="javascript:;" class="music_btn play"><img src="images/yuan_btn_1.png"> </a>
+            <a href="javascript:;" class="notice_btn play"><img src="images/yuan_btn_2.png"> </a>
+            <a href="javascript:;" class="nav_btn">
+                <img src="images/yuan_btn_3.png">
+                <div class="nav">
+                    <ul>
+                        <li><a href="choose_gongzhong.html"><img src="images/nav_01.png"><span>云练兵</span></a></li>
+                        <li><a href="yunpaihang.html"><img src="images/nav_02.png"><span>云排行</span></a></li>
+                        <li><a href="yunmenzhen.html"><img src="images/nav_03.png"><span>云门诊</span></a></li>
+                        <li><a href="yunjianyi.html"><img src="images/nav_04.png"><span>云建议</span></a></li>
+                        <li><a href="gerenzhongxin.html"><img src="images/nav_06.png"><span>云账户</span></a></li>
+                        <li class="tuichu"><a href="#"><img src="images/nav_05.png"><span>退出登录</span></a></li>
+                    </ul>
+                    <div class="arrow"></div>
+                </div>
+            </a>
+        </div>
     </div>
+    <div class="layer"></div>
 </div>
-<div class="nav">
-    <ul>
-        <li><a href="choose_gongzhong.html"><img src="images/nav_01.png"><span>云练兵</span></a></li>
-        <li><a href="yunpaihang.html"><img src="images/nav_02.png"><span>云排行</span></a></li>
-        <li><a href="yunmenzhen.html"><img src="images/nav_03.png"><span>云门诊</span></a></li>
-        <li><a href="yunjianyi.html"><img src="images/nav_04.png"><span>云建议</span></a></li>
-        <li><a href="gerenzhongxin.html"><img src="images/nav_06.png"><span>云账户</span></a></li>
-        <li class="tuichu"><a href="#"><img src="images/nav_05.png"><span>退出登录</span></a></li>
-    </ul>
-    <div class="arrow"></div>
-</div>
-<div class="layer"></div>
 <div class="music">
     <audio src="images/index.wav" autoplay loop id="music"></audio>
 </div>
-<!--<div class="shuye_top"><img src="images/shuye_1.png"></div>
-<div class="shuye_bot"><img src="images/shuye_2.png"></div>-->
-<div id="container">
-    <!-- The container is dynamically populated using the init function in leaves.js -->
-    <!-- Its dimensions and position are defined using its id selector in leaves.css -->
-    <div id="leafContainer"></div>
-    <!-- its appearance, dimensions, and position are defined using its id selector in leaves.css -->
-</div>
-
 
 <div class="login_out">
     <p>您确定要退出登录吗？</p>
@@ -67,78 +64,7 @@
 <div class="over_layer"></div>
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/kxbdSuperMarquee.js"></script>
-<script src="js/leaves.js"></script>
 <script src="js/nav.js"></script>
-<script>
-    $(function () {
-        //导航按钮
-        $(".nav_btn").click(function () {
-            $(".nav").fadeIn("fast");
-            $(".layer").show();
-        });
-        $(".layer").click(function () {
-            $(".nav").fadeOut("fast");
-            $(".layer").hide();
-        });
-        //音乐暂停、播放
-        var oMusic=document.getElementById('music');
-        $('.music_btn').click(function(){
-            if($(this).hasClass('play')){
-                $(this).removeClass();
-                $(this).find("img").attr("src","images/yuan_btn_close_1.png");
-                oMusic.pause();
-            }else{
-                $(this).addClass('play');
-                $(this).find("img").attr("src","images/yuan_btn_1.png");
-                oMusic.play();
-            }
-        });
-        //系统通知
-        //轮播
-        var bodyWidth=$("body").width();
-        var noticeWidth=bodyWidth*0.94-155;
-        $("#marquee5").width(noticeWidth);
-        /*$('#marquee5').liMarquee({
-            scrollamount:15,
-            direction: 'up'
-        });*/
-        var $marquee=$('#marquee5').kxbdSuperMarquee({
-            isEqual:false,
-            distance:20,
-            time:2,
-            direction:'up'
-        });
-        //暂停、滚动
-        $(".notice_btn").click(function () {
-            if($(this).hasClass("play")){
-                $(".notice").fadeOut("fast");
-                $(this).find("img").attr("src","images/yuan_btn_close_2.png");
-                $(this).removeClass("play")
-            }else {
-                $(".notice").fadeIn("fast");
-                $(this).addClass('play');
-                $(this).find("img").attr("src","images/yuan_btn_2.png");
-            }
-        });
-        //退出登录
-        $(".tuichu").click(function () {
-            $(".login_out").fadeIn("fast");
-            $(".nav").fadeOut("fast");
-            $(".over_layer").show();
-        });
-        //取消
-        $(".quxiao").click(function () {
-            $(".login_out").fadeOut("fast");
-            $(".over_layer").hide();
-        });
-        //确定
-        $(".queding").click(function () {
-            $(".login_out").fadeOut("fast");
-            $(".over_layer").hide();
-        })
 
-
-    })
-</script>
 </body>
 </html>

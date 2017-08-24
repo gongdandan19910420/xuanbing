@@ -5,69 +5,58 @@ i{
     font-style: normal;
 }
 .dati_info{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
     height: 25px;
     background: url("../images/dati_info_bg.png") no-repeat left top/100% 100%;
     line-height: 25px;
-    z-index: 9;
+    font-size: 1.2rem;
 }
 .dati_info .dati_time{
     float: left;
     padding-left: 8%;
+    line-height: 25px;
 }
 .dati_info .dati_panduan{
     float: right;
     padding-right: 5%;
+    line-height: 25px;
 }
 .error_num{
     color: #c70909;
 }
 .dati{
     width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: url("../images/dati_bg_02.png") no-repeat left top/100% 100%;
 }
 .timu{
-    width: 68%;
-    height: 42%;
-    position: absolute;
-    left: 50%;
-    top: 7%;
-    transform: translateX(-50%);
+    width: 100%;
+    background: url("../images/dati_juanzhou_02.png") no-repeat left top/100% 100%;
+    margin-top: 15px;
 }
 .timu h3{
     font-size: 20px;
     color: #a80000;
     text-align: center;
     line-height: 50px;
-    margin-top: 10%;
+    padding: 20px 0 0 0;
+    margin: 0;
 }
 .timu .ti_txt{
+    width: 68%;
+    margin:0 auto;
     line-height: 26px;
     font-size: 14px;
     color: #360000;
 }
 .timu .ti_j{
-    width: 100%;
+    width: 68%;
     text-align: right;
     color: #a80000;
-    margin-top: 10%;
-    position: absolute;
-    bottom: 10%;
+    margin: 0 auto;
+    padding: 20px 0;
     font-size: 12px;
 }
 .choose{
-    position: absolute;
-    top: 55%;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 20px;
+    min-height: 190px;
 }
 .choose ul li{
     /*margin-bottom: 7%;*/
@@ -139,18 +128,16 @@ i{
 }
 .dati_btn{
     width: 85%;
-    position: absolute;
-    left: 50%;
-    top: 90%;
-    transform: translateX(-50%);
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding: 20px 0;
 }
 .dati_btn  a{
     display: block;
     width:32%;
-    height: 6vh;
-    line-height: 6.5vh;
+    height: 32px;
+    line-height: 32px;
     background: url("../images/dati_btn_bg_12.png") no-repeat left top/100% 100%;
     color: #ffdfa4;
     text-align: center;
@@ -158,28 +145,24 @@ i{
 }
 /*闯关说明*/
 .dati_shuoming{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: url("../images/shuoming_bg_02.png") no-repeat left top/100% 100%;
+    width: 88%;
+    margin: 40px auto 0;
+    padding: 50px 0;
+    background: url("../images/shuoming_juanzhou_03.png") no-repeat left top/100% 100%;
     display: none;
 }
 .shuoming_txt{
     width: 65%;
-    position: absolute;
-    left: 50%;
-    top: 19%;
-    transform: translateX(-50%);
+    margin: 0 auto;
     font-size: 14px;
     height: 56%;
     line-height: 24px;
+    color: #26170e;
 }
 .know_btn{
     width:27%;
-    height: 6vh;
-    line-height: 6vh;
+    height: 32px;
+    line-height: 32px;
     position: absolute;
     left: 50%;
     top: 90%;
@@ -190,43 +173,50 @@ i{
 }
 /*金蛋*/
 .jindan{
-    width:100%;
+    width:83%;
+    height: 100%;
+    overflow: hidden;
     position: absolute;
-    top: 7%;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
-    height: 45%;
+    max-width: 350px;
 }
 .wei_open{
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    top: 5%;
 }
-.wei_open img.dan{
-    width: 83%;
+.wei_open .dan_w{
+    width: 100%;
     display: block;
     margin: 0 auto;
-    margin-top: 16%;
+    margin-top: 35px;
+    max-width: 345px;
+    position: relative;
+}
+.wei_open .dan_w .dan{
+    width: 100%;
 }
 .wei_open img.chuizi{
-    width: 30%;
+    width: 35%;
+    max-width: 150px;
+    position: absolute;
+    right: 16px;
+    top: -30px;
 }
 .yi_open{
     position: absolute;
     display: none;
     width: 100%;
-    height: 100%;
+    top: 5%;
 }
 .yi_open img.dan_kai{
-    width: 93%;
+    width: 110%;
     position: absolute;
-    top: 4%;
     left: 48%;
     transform: translateX(-50%);
-    z-index: 9;
+    top: -20px;
 }
 /*.yi_open img.dan_guang{
     width: 150%;
@@ -242,7 +232,7 @@ i{
     -moz-text-shadow:#ffd800 1px 0 0,#ffd800 0 1px 0,#ffd800 -1px 0 0,#ffd800 0 -1px 0;
     font-size: 24px;
     position: absolute;
-    top:8%;
+    top:40px;
     width: 100%;
     text-align: center;
     z-index: 99;
@@ -253,6 +243,8 @@ i{
     position: fixed;
     background: rgba(0,0,0,0.5);
     z-index: 10;
+    left: 0;
+    top: 0;
 }
 .chuizi {
     position: absolute;
@@ -273,22 +265,22 @@ i{
 }
 @keyframes chuizi {
     0% {
-        -moz-transform: rotate(15deg);
-        -ms-transform: rotate(15deg);
-        -webkit-transform: rotate(15deg);
-        transform: rotate(15deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
     }
     30% {
-        -moz-transform: rotate(-26deg);
-        -ms-transform: rotate(-26deg);
-        -webkit-transform: rotate(-26deg);
-        transform: rotate(-26deg);
+        -moz-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
     }
     100% {
-        -moz-transform: rotate(15deg);
-        -ms-transform: rotate(15deg);
-        -webkit-transform: rotate(15deg);
-        transform: rotate(15deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
     }
 }
 @-webkit-keyframes chuizi {

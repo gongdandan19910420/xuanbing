@@ -4,60 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <title>闯关答题</title>
+    <link rel="stylesheet" href="css/mui.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/dati.css">
 </head>
 <body>
-<div class="dati_info">
-    <div class="dati_time" id="timer">00:00:05</div>
-    <div class="dati_panduan">
-        <span class="error">错误（<i class="error_num">0</i>）</span>
-        <span class="correct">正确（<i class="correct_num">0</i>）</span>
-    </div>
-</div>
-<div class="dati">
-    <div class="timu">
-        <h3>第<span class="tihao">一</span>题</h3>
-        <p class="ti_txt">转炉底吹供气砖侵蚀速度与供气量有关，因为供气量大，钢水搅拌加快，钢水对供 气砖冲刷快。</p>
-        <div class="ti_j"><span class="tixing">判断题</span><span class="jibie">（初级）</span></div>
-    </div>
-    <div class="choose">
-        <ul>
-           <!-- <li><img src="images/choose_1.png"> <span class="duihao"></span></li>
-            <li><img src="images/choose_2.png">  <span class="duihao"></span></li>-->
-            <li class="cx-checkbox">
-                <div class="ico-0"><img src="images/chooseimg_1.png"> </div>
-                <label><input type="radio" name="sex" value="A">&nbsp;正确</label>
-            </li>
-            <li class="cx-checkbox">
-                <div class="ico-0"><img src="images/chooseimg_2.png"> </div>
-                <label><input type="radio" name="sex" value="A">&nbsp;错误</label>
-            </li>
-        </ul>
-    </div>
-    <div class="dati_btn">
-        <a href="javascript:;" class="shuoming">关口说明</a>
-        <a href="javascript:;" class="next_ti">下一题</a>
-        <a href="index.html" class="exit_ti">退出闯关</a>
-    </div>
-    <div class="jindan">
-        <div class="wei_open">
-            <img src="images/chuizi.png" class="chuizi">
-            <img src="images/jindan_1.png" class="dan">
-        </div>
-        <div class="yi_open">
-            <p>恭喜您获得<span class="get_thing">XXX</span>一个</p>
-            <img src="images/jindan.png" class="dan_kai">
-            <!--<img src="images/jindan_guang.png" class="dan_guang">-->
+<div class="mui-content">
+    <div class="dati_info">
+        <div class="dati_time" id="timer">00:00:05</div>
+        <div class="dati_panduan">
+            <span class="error">错误（<i class="error_num">0</i>）</span>
+            <span class="correct">正确（<i class="correct_num">0</i>）</span>
         </div>
     </div>
-</div>
-<div class="dati_shuoming">
-    <p class="shuoming_txt">关口说明内容，大约200-300字纯文本文档。 关口说明内容，大约200-300字纯文本文档。 关口说明内容，大约200-300字纯文本文档</p>
-    <a href="javascript:;" class="know_btn">知道了</a>
+    <div class="dati">
+        <div class="timu">
+            <h3>第<span class="tihao">一</span>题</h3>
+            <p class="ti_txt">转炉底吹供气砖侵蚀速度与供气量有关，因为供气量大，钢水搅拌加快，钢水对供 气砖冲刷快。</p>
+            <div class="ti_j"><span class="tixing">判断题</span><span class="jibie">（初级）</span></div>
+        </div>
+        <div class="choose">
+            <ul>
+                <!-- <li><img src="images/choose_1.png"> <span class="duihao"></span></li>
+                 <li><img src="images/choose_2.png">  <span class="duihao"></span></li>-->
+                <li class="cx-checkbox">
+                    <div class="ico-0"><img src="images/chooseimg_1.png"> </div>
+                    <label><input type="radio" name="sex" value="A">&nbsp;正确</label>
+                </li>
+                <li class="cx-checkbox">
+                    <div class="ico-0"><img src="images/chooseimg_2.png"> </div>
+                    <label><input type="radio" name="sex" value="A">&nbsp;错误</label>
+                </li>
+            </ul>
+        </div>
+        <div class="dati_btn">
+            <a href="javascript:;" class="shuoming">关口说明</a>
+            <a href="javascript:;" class="next_ti">下一题</a>
+            <a href="index.html" class="exit_ti">退出闯关</a>
+        </div>
+        <div class="jindan">
+            <div class="wei_open">
+                <div class="dan_w">
+                    <img src="images/jindan_1.png" class="dan">
+                    <img src="images/chuizi.png" class="chuizi">
+                </div>
+
+            </div>
+            <div class="yi_open">
+                <p>恭喜您获得<span class="get_thing">XXX</span>一个</p>
+                <img src="images/jindan.png" class="dan_kai">
+                <!--<img src="images/jindan_guang.png" class="dan_guang">-->
+            </div>
+        </div>
+    </div>
+    <div class="dati_shuoming">
+        <p class="shuoming_txt">关口说明内容，大约200-300字纯文本文档。 关口说明内容，大约200-300字纯文本文档。 关口说明内容，大约200-300字纯文本文档</p>
+        <a href="javascript:;" class="know_btn">知道了</a>
+    </div>
 </div>
 <div class="overlayer"></div>
-
+<script src="js/mui.min.js"></script>
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/dati.js"></script>
 </body>

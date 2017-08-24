@@ -1,32 +1,38 @@
-body{
-    background: url("../images/bg.png") no-repeat left top/100% 100%;
-}
+
 .guangshu{
-    position: absolute;
     width: 100%;
-    height: 80%;
-    animation: myMove1 10s 0s linear infinite;
-    -webkit-animation: myMove1 10s 0s linear infinite;
-    transform-origin: 50% 30%;
+    height: 40%;
+    max-width: 420px;
+    margin: 0 auto;
+    position: relative;
 }
-.guangshu img{
+@media screen and (min-width: 420px) {
+    .guangshu{
+        min-height: 260px;
+    }
+}
+.guangshu .gs_img{
     width: 150%;
     position: absolute;
     left: 50%;
-    top: 35%;
+    top: 50%;
     transform: translate(-50%,-50%);
     opacity: 0.6;
+    animation: myMove1 10s 0s linear infinite;
+    -webkit-animation: myMove1 10s 0s linear infinite;
+    transform-origin: 50% 50%;
 }
 @keyframes myMove1 {
-    0% {transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
+    0% {transform:  translate(-50%,-50%) rotate(0deg);}
+    100%{transform: translate(-50%,-50%) rotate(360deg);}
 }
 .success{
     width: 58%;
     position: absolute;
     left: 50%;
-    top: 10%;
+    top: 26%;
     transform: translateX(-50%);
+    max-width: 240px;
 }
 .success img.success_img{
     width: 100%;
@@ -79,42 +85,38 @@ body{
 }
 .tip{
     width: 87%;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 20px auto 0;
 }
 .tip img{
     width: 100%;
 }
 .cg_info{
     width: 81%;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 30px auto;
+}
+.cg_info ul{
+    overflow: hidden;
 }
 .cg_info li{
     width: 50%;
     float: left;
     font-size: 14px;
-    margin-bottom: 10px;
     color: #fff;
     text-shadow:0 1px 1px #000;
 }
+.cg_info li p{
+    color: #fff;
+}
 .success_btn{
     width: 71%;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto 10px;
     overflow: hidden;
 }
 .success_btn a{
     display: block;
     width:38%;
-    height: 6vh;
-    line-height: 6.5vh;
+    height: 32px;
+    line-height:32px;
     background: url("../images/dati_btn_bg_12.png") no-repeat left top/100% 100%;
     color: #ffdfa4;
     text-align: center;
@@ -125,4 +127,13 @@ body{
 }
 .success_btn a.wylk{
     float: right;
+}
+/*失败页面*/
+.shibai{
+    width: 58%;
+    margin: 60px auto 0;
+    max-width: 240px;
+}
+.shibai img{
+    width: 100%;
 }

@@ -3,19 +3,17 @@ body{
 }
 .jiangbei{
     width: 75%;
-    position: absolute;
-    top: 4%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 25px auto 0;
+    position: relative;
 }
 .jiangbei img{
     width: 100%;
 }
 .bang_img{
-    width: 90%;
+    width: 122%;
     position: absolute;
     left: 50%;
-    top: 12%;
+    top: 34%;
     transform: translateX(-50%);
 }
 .bang_img ul li{
@@ -31,15 +29,16 @@ body{
     width: 100%;
 }
 .mingci{
-    width: 58%;
-    position: absolute;
-    top: 32%;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 90%;
+    margin: -68px auto 0;
     font-family: "黑体";
     text-align: center;
-}.mingci table{
-    width: 100%;
+    background: url("../images/yunpaihang_juanzhou_03.png") no-repeat left top/100% 100%;
+    padding: 90px 0 70px;
+}
+.mingci table{
+    width: 70%;
+    margin: 0 auto;
  }
 .mingci thead tr{
     color: #a80000;

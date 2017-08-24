@@ -1,12 +1,10 @@
-body{
-    background: url("../images/chuangguan_bg_02.png") no-repeat left top/100% 100%;
-}
+
 i{
     font-style: normal;
 }
 .user_box{
     width: 90%;
-    margin: 5% auto 0;
+    margin: 10px auto 0;
     background: rgba(0,0,0,0.4) url("../images/user_bg.png") no-repeat left top/100% 100%;
 }
 .user_wrapper{
@@ -35,9 +33,11 @@ i{
     margin-left: 8%;
 }
 .user_name{
-    line-height: 2.5vh;
-    font-size: 18px;
-    margin-top: 3px;
+    line-height:2rem;
+    font-size: 1.8rem;
+}
+.rank{
+    line-height: 2rem;
 }
 .rank_num{
     color: #ed1616;
@@ -52,13 +52,13 @@ i{
     vertical-align: middle;
 }
 .guli{
-    margin-top: -5px;
+    line-height: 2rem;
 }
 .last_cg{
     margin-top: 2%;
 }
 .last_cg p{
-    line-height: 3.5vh;
+    line-height: 18px;
 }
 .jifen{
     display: block;
@@ -76,9 +76,6 @@ i{
 }
 .cg_cishu{
     overflow: hidden;
-}
-.cg_num{
-    padding: 10px 0;
 }
 .cg_num ul{
     overflow: hidden;

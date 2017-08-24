@@ -37,10 +37,12 @@ $(function () {
     //关口说明按钮
     $(".shuoming").click(function () {
         $(".dati_shuoming").fadeIn("fast");
+        $(".dati").hide();
         document.title="关口说明";
     });
     $(".know_btn").click(function () {
         $(".dati_shuoming").fadeOut("fast");
+        $(".dati").fadeIn("fast");
         document.title="闯关答题";
     });
     //下一题
@@ -97,11 +99,13 @@ $(function () {
     });
     $(".yi_open").click(function () {
         $(this).fadeOut("fast");
+        $(".jindan").hide();
         $(".overlayer").hide();
     });
     $(".overlayer").click(function () {
         if($(".yi_open").is(":visible")){
             $(".overlayer").hide();
+            $(".jindan").hide();
             $(".yi_open").fadeOut("fast");
         }
     })
