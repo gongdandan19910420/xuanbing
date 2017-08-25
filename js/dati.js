@@ -90,8 +90,8 @@ $(function () {
             }
         });
     })
-
     //砸金蛋
+    alert(1)
     $(".wei_open").click(function () {
         $(this).fadeOut("fast");
         $(".yi_open").fadeIn("fast");

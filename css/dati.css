@@ -175,13 +175,14 @@ i{
 .jindan{
     width:83%;
     height: 100%;
+    margin: 0 auto;
     overflow: hidden;
+    max-width: 350px;
     position: absolute;
-    top: 0;
     left: 50%;
+    top: 0;
     transform: translateX(-50%);
     z-index: 100;
-    max-width: 350px;
 }
 .wei_open{
     position: absolute;
@@ -240,7 +241,7 @@ i{
 .overlayer{
     width: 100%;
     height: 100%;
-    position: fixed;
+    position: absolute;
     background: rgba(0,0,0,0.5);
     z-index: 10;
     left: 0;

@@ -74,20 +74,20 @@ a{
 
 @-moz-keyframes movecenter /* Firefox */
 {
-    from {left: -72.9%;}
-    to {left: 13.3%}
+    from {left: -100%;}
+    to {left: 0}
 }
 
 @-webkit-keyframes movecenter /* Safari 和 Chrome */
 {
-    from {left: -72.9%;}
-    to {left: 13.3%}
+    from {left: -100%;}
+    to {left: 0}
 }
 
 @-o-keyframes movecenter /* Opera */
 {
-    from {left: -72.9%;}
-    to {left: 13.3%}
+    from {left: -100%;}
+    to {left: 0}
 }
 
 
