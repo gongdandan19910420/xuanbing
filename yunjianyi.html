@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <title>云建议</title>
+    <link rel="stylesheet" href="css/mui.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/yunjianyi.css">
 </head>
 <body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">云建议</h1>
+</header>
 <div class="wrapper">
     <div id="segmentedControl" class="top_btn mui-segmented-control">
         <a class="mui-control-item mui-active" href="#item1">我的建议</a>
         <a class="mui-control-item" href="#item2">草稿箱</a>
         <a class="mui-control-item" href="#item3">发表建议</a>
     </div>
-    <div id="item1" class="jianyi_list mui-control-content">
+    <div id="item1" class="jianyi_list mui-control-content mui-active">
         <ul class="mui-table-view">
             <li class="jy_list_item mui-table-view-cell">
                 <div class="top_item">
@@ -78,13 +83,188 @@
             </li>
         </ul>
     </div>
-    <div id="item2" class="mui-control-content"></div>
-    <div id="item3" class="mui-control-content"></div>
-
+    <div id="item2" class="mui-control-content">
+        <div class="jianyi_list cg_list">
+            <ul class="mui-table-view">
+                <li>
+                    <div class="cg_time">2017-9-10</div>
+                    <div class="jymc">
+                        <span class="title">建议名称</span>
+                        <input type="text" class="info" value="建议名称">
+                    </div>
+                </li>
+                <li>
+                    <div class="cg_time">2017-9-10</div>
+                    <div class="jymc">
+                        <span class="title">建议名称</span>
+                        <input type="text" class="info" value="建议名称">
+                    </div>
+                </li>
+                <li>
+                    <div class="cg_time">2017-9-10</div>
+                    <div class="jymc">
+                        <span class="title">建议名称</span>
+                        <input type="text" class="info" value="建议名称">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="xiangqing">
+            <div class="jianyi_list">
+                <ul class="mui-table-view">
+                    <li>
+                        <div class="jymc">
+                            <span class="title">建议名称</span>
+                            <input type="text" class="info" value="建议名称">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="jymc">
+                            <span class="title">类别</span>
+                            <input type="text" class="info" value="企业管理">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="jymc">
+                            <span class="title">建议事由</span>
+                            <input type="text" class="info" value="建议事由">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="jymc">
+                            <textarea placeholder="请填写建议内容"></textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="jymc">
+                            <span class="title">预计效益</span>
+                            <input type="text" class="info" value="建议实施后的预计效益（万元）">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="jymc">
+                            <span class="title">岗位</span>
+                            <input type="text" class="info" value="您的岗位">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="jymc">
+                            <span class="title">附件</span>
+                            <input type="file" class="info" value="建议事由">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bot_btn">
+                <a href="javascript:;" class="cg_tijiao">提交</a>
+                <a href="javascript:;" class="cg_fanhui">返回</a>
+            </div>
+        </div>
+    </div>
+    <div id="item3" class="mui-control-content">
+        <div class="jianyi_list">
+            <ul class="mui-table-view">
+                <li>
+                    <div class="jymc">
+                        <span class="title">建议名称</span>
+                        <input type="text" class="info" value="建议名称">
+                    </div>
+                </li>
+                <li>
+                    <div class="jymc">
+                        <span class="title">类别</span>
+                        <input type="text" class="info" value="企业管理">
+                    </div>
+                </li>
+                <li>
+                    <div class="jymc">
+                        <span class="title">建议事由</span>
+                        <input type="text" class="info" value="建议事由">
+                    </div>
+                </li>
+                <li>
+                    <div class="jymc">
+                        <textarea placeholder="请填写建议内容"></textarea>
+                    </div>
+                </li>
+                <li>
+                    <div class="jymc">
+                        <span class="title">预计效益</span>
+                        <input type="text" class="info" value="建议实施后的预计效益（万元）">
+                    </div>
+                </li>
+                <li>
+                    <div class="jymc">
+                        <span class="title">岗位</span>
+                        <input type="text" class="info" value="您的岗位">
+                    </div>
+                </li>
+                <li>
+                    <div class="jymc">
+                        <span class="title">附件</span>
+                        <input type="file" class="info" value="建议事由">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="bot_btn">
+            <a href="javascript:;">暂存</a>
+            <a href="javascript:;">提交</a>
+            <a href="javascript:;">返回</a>
+        </div>
+    </div>
+    <div class="bot_nav">
+        <div class="yuan_btn">
+            <a href="javascript:;" class="nav_btn">
+                <img src="images/yuan_btn_3.png">
+            </a>
+            <div class="nav">
+                <ul>
+                    <li><a href="choose_gongzhong.html"><img src="images/nav_01.png"><span>云练兵</span></a></li>
+                    <li><a href="yunpaihang.html"><img src="images/nav_02.png"><span>云排行</span></a></li>
+                    <li><a href="yunmenzhen.html"><img src="images/nav_03.png"><span>云门诊</span></a></li>
+                    <li><a href="yunjianyi.html"><img src="images/nav_04.png"><span>云建议</span></a></li>
+                    <li><a href="gerenzhongxin.html"><img src="images/nav_06.png"><span>云账户</span></a></li>
+                    <li class="tuichu"><a href="#"><img src="images/nav_05.png"><span>退出登录</span></a></li>
+                </ul>
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </div>
+    <div class="layer"></div>
     </div>
 </div>
-
+<div class="login_out">
+    <p>您确定要退出登录吗？</p>
+    <div class="login_btn">
+        <a href="#" class="quxiao">取消</a>
+        <a href="#" class="queding">确定</a>
+    </div>
+</div>
+<div class="over_layer"></div>
 
 <script src="js/mui.min.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/nav_btn.js"></script>
+<script>
+    $(function () {
+        $(".cg_list").on("click","li",function () {
+            $(".cg_list").hide();
+            $(".xiangqing").show();
+        });
+        $(".cg_fanhui").click(function () {
+            $(".cg_list").show();
+            $(".xiangqing").hide();
+        });
+        $("#item2 .xiangqing .info").focus(function () {
+            $('.cg_tijiao').html("保存");
+            $('.cg_tijiao').removeClass("cg_tijiao").addClass("cg_baocun")
+        });
+        $("#item2 .xiangqing").on("click",".cg_baocun",function () {
+            $('.cg_baocun').html("提交");
+            $('.cg_baocun').removeClass(".cg_baocun").addClass("cg_tijiao")
+        })
+    });
+</script>
 </body>
 </html>

@@ -63,7 +63,7 @@ em{
 .user_info ul{
     width: 80%;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 40px 0 50px;
 }
 .user_info li{
     padding: 0 0 0 5%;
@@ -97,10 +97,10 @@ em{
 .jifen_num,.jinbi_num{
     color: #de4c3f;
 }
-.tuichu{
+.tuichu_a{
    margin-top: 20px;
 }
-.tuichu a{
+.tuichu_a a{
     display: block;
     width:26%;
     height: 32px;
@@ -173,4 +173,7 @@ em{
     background: rgba(0,0,0,0.5);
     display: none;
     z-index: 9;
+}
+.yuan_btn a.nav_btn{
+    float: right;
 }

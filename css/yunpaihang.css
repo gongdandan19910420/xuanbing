@@ -45,10 +45,11 @@ body{
     font-size: 16px;
     line-height: 6vh;
 }
-.mingci img{
+.mingci img.mingci_img{
     display: block;
     width: 31px;
     height: 38px;
+    margin: 0 auto;
 }
 .mingci tbody tr td{
     padding: 5px 0;
@@ -60,8 +61,32 @@ body{
 }
 .rank_num{
     position: absolute;
-    top: 12px;
-    left: 11px;
+    top: 11px;
+    left: 20px;
     color: #fff;
     font-size: 15px;
+}
+.yuan_btn a.nav_btn{
+    float: right;
+}
+.tishi{
+    display: none;
+    position: absolute;
+    bottom: -12px;
+    left: -75px;
+    border: 1px solid #d3b684;
+    color:#966a37;
+    width: 170px;
+    background: rgba(255,255,255,0.6);
+    z-index: 9;
+    border-radius: 3px;
+}
+.pk{
+    position: relative;
+}
+.pk_img{
+    width: 22px;
+    height: 25px;
+    display: block;
+    margin: 0 auto;
 }

@@ -14,6 +14,7 @@ em{
 .menzhen_list{
     width: 90%;
     margin: 5% auto;
+    padding-top: 44px;
 }
 .list_item{
     background: rgba(255,255,255,0.5);
@@ -41,4 +42,7 @@ em{
     color: #387945;
     font-size: 14px;
     overflow: hidden;
+}
+.yuan_btn a.nav_btn{
+    float: right;
 }

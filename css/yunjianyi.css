@@ -11,13 +11,23 @@ body{
 .wrapper{
     width: 94%;
     margin: 0 auto;
+    padding-top: 44px;
 }
 .top_btn{
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
 }
-.top_btn a{
+.mui-segmented-control{
+    border: none;
+}
+.bot_btn{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.mui-segmented-control.top_btn .mui-control-item,.bot_btn a{
     display: block;
     width:32%;
     height: 32px;
@@ -26,19 +36,26 @@ body{
     color: #ffdfa4;
     text-align: center;
     font-size: 14px;
+    border: none;
 }
-.top_btn a.mui-active{
+.mui-table-view{
+    background: none;
+}
+.mui-table-view:before,.mui-table-view:after{
+    height: 0;
+}
+.mui-segmented-control.top_btn .mui-control-item.mui-active{
     background: url("../images/liang_btn_bg.png") no-repeat left top/100% 100%;
 }
 .jianyi_list{
     padding: 0 3%;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.7);
     border: 1px solid #fff;
     border-radius: 5px;
     margin: 20px 0;
 }
 .jy_list_item{
-    padding: 30px 0 10px;
+    padding: 10px 0 10px;
     border-bottom: 1px solid rgba(150,106,55,0.5);
 }
 .jy_list_item:last-child{
@@ -49,6 +66,7 @@ body{
 }
 .top_item{
     margin-bottom: 10px;
+    font-size: 12px;
 }
 .jy_time{
     color: #966a37;
@@ -67,7 +85,7 @@ body{
     width: 60%;
     font-size: 13px;
     color: #966a37;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .jy_info ul li:nth-child(2n){
     width: 40%;
@@ -82,4 +100,58 @@ body{
 .jy_zan p{
     font-size: 12px;
     color: #83b444;
+}
+.yuan_btn a.nav_btn{
+    float: right;
+}
+#item2.jianyi_list{
+
+}
+#item2 .cg_time{
+    font-size: 12px;
+    color: #966a37;
+    padding: 10px 3px 0;
+}
+#item2 .jymc,#item3 .jymc{
+    border-bottom: 1px solid #966a37;
+    padding:10px 3px;
+}
+#item2 .title,#item3 .title{
+    font-size: 16px;
+    color: #684543;
+    width: 30%;
+    line-height: 24px;
+    display: block;
+    float: left;
+}
+#item2 .info,#item3 .info{
+    width: 70%;
+    border: none;
+    background: none;
+    font-size: 13px;
+    line-height: 24px;
+    height: auto;
+    margin-bottom: 0;
+    padding: 0 15px;
+    color: #966a37;
+}
+#item3 textarea,#item2 textarea{
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    font-size: 12px;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:#966a37;
+    font-size: 12px;
+}
+#item2 li:last-child .jymc,#item3 li:last-child .jymc{
+    border-bottom: none;
+}
+.xiangqing {
+    display: none;
+}
+.xiangqing .bot_btn{
+    width: 75%;
 }

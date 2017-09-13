@@ -264,6 +264,9 @@ i{
     -webkit-animation: chuizi 1.5s ease infinite ;
     animation: chuizi 1.5s ease infinite ;
 }
+.yuan_btn a.nav_btn{
+    float: right;
+}
 @keyframes chuizi {
     0% {
         -moz-transform: rotate(10deg);

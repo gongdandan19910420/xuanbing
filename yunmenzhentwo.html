@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <title>马成天车工作室</title>
+    <link rel="stylesheet" href="css/mui.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/yunmenzhentwo.css">
 </head>
 <body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">马成天车工作室</h1>
+</header>
 <div class="wrapper">
     <h4>坐诊专家：<span class="zj_name">工会生产部</span></h4>
-    <div class="tiwen"><a href="#tiwen_box">我要提问</a> </div>
+    <div class="tiwen"><a href="javascript:;">我要提问</a> </div>
     <div class="question_list">
         <div class="question_list_item">
         <div class="wenti">
@@ -70,9 +75,59 @@
         </div>
     </div>
     <div class="tiwen_box" id="tiwen_box">
+        <div class="tiwen_btn">
+            <a href="javascript:;" class="qx mui-pull-left">取消</a>
+            <a href="javascript:;" class="fs mui-pull-right">发送</a>
+            <h2 class="mui-title">我要提问</h2>
+        </div>
         <textarea placeholder="请输入提问内容"></textarea>
     </div>
+    <div class="bot_nav">
+        <div class="yuan_btn">
+            <a href="javascript:;" class="nav_btn">
+                <img src="images/yuan_btn_3.png">
+            </a>
+            <div class="nav">
+                <ul>
+                    <li><a href="choose_gongzhong.html"><img src="images/nav_01.png"><span>云练兵</span></a></li>
+                    <li><a href="yunpaihang.html"><img src="images/nav_02.png"><span>云排行</span></a></li>
+                    <li><a href="yunmenzhen.html"><img src="images/nav_03.png"><span>云门诊</span></a></li>
+                    <li><a href="yunjianyi.html"><img src="images/nav_04.png"><span>云建议</span></a></li>
+                    <li><a href="gerenzhongxin.html"><img src="images/nav_06.png"><span>云账户</span></a></li>
+                    <li class="tuichu"><a href="#"><img src="images/nav_05.png"><span>退出登录</span></a></li>
+                </ul>
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </div>
+    <div class="layer"></div>
 </div>
-
+<div class="login_out">
+    <p>您确定要退出登录吗？</p>
+    <div class="login_btn">
+        <a href="#" class="quxiao">取消</a>
+        <a href="#" class="queding">确定</a>
+    </div>
+</div>
+<div class="over_layer"></div>
+<script src="js/mui.min.js"></script>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/nav_btn.js"></script>
+<script>
+    $(function () {
+        $(".tiwen").on("click","a",function () {
+            $(".tiwen_box").fadeIn("fast");
+            $(".over_layer").show();
+        });
+        $(".qx").click(function () {
+            $(".tiwen_box").fadeOut("fast");
+            $(".over_layer").hide();
+        });
+        $(".fs").click(function () {
+            $(".tiwen_box").fadeOut("fast");
+            $(".over_layer").hide();
+        });
+    })
+</script>
 </body>
 </html>

@@ -2,15 +2,7 @@
  * Created by Administrator on 2017/8/21.
  */
 $(function () {
-    //导航按钮
-    $(".nav_btn").click(function () {
-        $(".nav").fadeIn("fast");
-        $(".layer").show();
-    });
-    $(".layer").click(function () {
-        $(".nav").fadeOut("fast");
-        $(".layer").hide();
-    });
+   
     //音乐暂停、播放
     var oMusic=document.getElementById('music');
     $('.music_btn').click(function(){
@@ -51,20 +43,5 @@ $(function () {
             $(this).find("img").attr("src","images/yuan_btn_2.png");
         }
     });
-    //退出登录
-    $(".tuichu").click(function () {
-        $(".login_out").fadeIn("fast");
-        $(".nav").fadeOut("fast");
-        $(".over_layer").show();
-    });
-    //取消
-    $(".quxiao").click(function () {
-        $(".login_out").fadeOut("fast");
-        $(".over_layer").hide();
-    });
-    //确定
-    $(".queding").click(function () {
-        $(".login_out").fadeOut("fast");
-        $(".over_layer").hide();
-    })
+    
 })

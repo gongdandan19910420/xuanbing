@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/gerenzhongxin.css">
 </head>
 <body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">个人中心</h1>
+</header>
 <div class="mui-content">
     <div class="top_info">
         <img src="images/geren_logo_03.png" class="geren_logo">
@@ -53,16 +57,47 @@
                 <span class="title">平台奖区</span>
                 <input type="text" class="info" value="未知">
             </li>
+            <li>
+                <span class="title">平台奖区</span>
+                <input type="text" class="info" value="未知">
+            </li>
+            <li>
+                <span class="title">平台奖区</span>
+                <input type="text" class="info" value="未知">
+            </li>
+            <li>
+                <span class="title">平台奖区</span>
+                <input type="text" class="info" value="未知">
+            </li>
 
         </ul>
     </div>
-    <div class="tuichu">
+    <div class="tuichu_a">
         <a href="#" class="tuichu_btn">退出登录</a>
     </div>
     <div class="edit_btn">
         <a href="#" class="sure">确定修改</a>
         <a href="#" class="close">取消</a>
     </div>
+    <div class="bot_nav">
+        <div class="yuan_btn">
+            <a href="javascript:;" class="nav_btn">
+                <img src="images/yuan_btn_3.png">
+            </a>
+            <div class="nav">
+                <ul>
+                    <li><a href="choose_gongzhong.html"><img src="images/nav_01.png"><span>云练兵</span></a></li>
+                    <li><a href="yunpaihang.html"><img src="images/nav_02.png"><span>云排行</span></a></li>
+                    <li><a href="yunmenzhen.html"><img src="images/nav_03.png"><span>云门诊</span></a></li>
+                    <li><a href="yunjianyi.html"><img src="images/nav_04.png"><span>云建议</span></a></li>
+                    <li><a href="gerenzhongxin.html"><img src="images/nav_06.png"><span>云账户</span></a></li>
+                    <li class="tuichu"><a href="#"><img src="images/nav_05.png"><span>退出登录</span></a></li>
+                </ul>
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </div>
+    <div class="layer"></div>
 </div>
 
 
@@ -75,12 +110,14 @@
 </div>
 <div class="over_layer"></div>
 
-
+<script src="js/mui.min.js"></script>
 <script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/nav_btn.js"></script>
 <script>
     $(function () {
         //退出登录
         $(".tuichu_btn").click(function () {
+            alert(1)
             $(".login_out").fadeIn("fast");
             $(".nav").fadeOut("fast");
             $(".over_layer").show();
