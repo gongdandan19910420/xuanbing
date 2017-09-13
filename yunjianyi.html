@@ -208,9 +208,9 @@
             </ul>
         </div>
         <div class="bot_btn">
-            <a href="javascript:;">暂存</a>
-            <a href="javascript:;">提交</a>
-            <a href="javascript:;">返回</a>
+            <a href="javascript:;" class="fb_zancun">暂存</a>
+            <a href="javascript:;" class="fb_tijiao">提交</a>
+            <a href="javascript:;" class="fb_fanhui">返回</a>
         </div>
     </div>
     <div class="bot_nav">
@@ -241,6 +241,10 @@
         <a href="#" class="queding">确定</a>
     </div>
 </div>
+<div class="tan_box">
+    <i class="mui-pull-right tan_close">X</i>
+    <p>已存到草稿箱</p>
+</div>
 <div class="over_layer"></div>
 
 <script src="js/mui.min.js"></script>
@@ -263,6 +267,30 @@
         $("#item2 .xiangqing").on("click",".cg_baocun",function () {
             $('.cg_baocun').html("提交");
             $('.cg_baocun').removeClass(".cg_baocun").addClass("cg_tijiao")
+        })
+        $(".fb_zancun").click(function () {
+            $(".tan_box p").html("已存到草稿箱");
+            $('.tan_box').fadeIn("fast");
+            $(".over_layer").show();
+        });
+        $(".fb_tijiao").click(function () {
+            $(".tan_box p").html("发表成功");
+            $('.tan_box').fadeIn("fast");
+            $(".over_layer").show();
+        });
+        $(".fb_fanhui").click(function () {
+            $("#segmentedControl a").removeClass("mui-active");
+            $("#segmentedControl a").eq(0).addClass("mui-active");
+            $("#item3").removeClass("mui-active");
+            $("#item1").addClass("mui-active");
+        });
+        $(".tan_close").click(function () {
+            $(".tan_box").fadeOut("fast");
+            $(".over_layer").hide();
+        });
+        $(".over_layer").click(function () {
+            $(".tan_box").fadeOut("fast");
+            $(".over_layer").hide();
         })
     });
 </script>

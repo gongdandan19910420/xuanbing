@@ -155,3 +155,27 @@ body{
 .xiangqing .bot_btn{
     width: 75%;
 }
+.tan_box{
+    width: 67%;
+    background: #fff;
+    color: #444;
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    z-index: 99;
+    display: none;
+}
+.tan_box i{
+    display: block;
+    padding: 0 5px;
+    color: #684543;
+}
+.tan_box p{
+    padding: 30px 0 30px;
+    text-align: center;
+    color: #ad4500;
+    font-size: 16px;
+}
