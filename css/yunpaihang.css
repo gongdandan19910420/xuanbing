@@ -41,6 +41,7 @@ body{
 .mc_con{
     max-height: 280px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 .mingci table{
     width: 70%;
