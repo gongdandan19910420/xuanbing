@@ -35,6 +35,12 @@ body{
     text-align: center;
     background: url("../images/yunpaihang_juanzhou_03.png") no-repeat left top/100% 100%;
     padding: 90px 0 70px;
+    max-height: 440px;
+    overflow: hidden;
+}
+.mc_con{
+    max-height: 280px;
+    overflow-y: auto;
 }
 .mingci table{
     width: 70%;

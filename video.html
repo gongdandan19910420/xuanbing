@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>网上练兵</title>
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        #video{
+            width:100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 9;
+        }
+        .first_img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99;
+        }
+        .first_img img.bg{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .first_img img.play{
+            width: 50px;
+            height: 50px;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .tiaoguo{
+            position: absolute;
+            z-index: 100;
+            right: 20px;
+            top: 10px;
+        }
+        .tiaoguo a{
+            font-size: 14px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="video">
+    <div class="first_img">
+        <img src="images/first.png" class="bg">
+        <img src="images/bfzn_004.png" class="play">
+    </div>
+    <div class="tiaoguo"><a href="index.html">跳过动画></a> </div>
+    <video src="images/donghua.mp4" id="video">Your browser does not support the video tag.</video>
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+    $(function () {
+        var video = document.getElementById('video') || null;
+
+        video.addEventListener('ended',function(){
+            //do something
+           // alert('亚麻蝶');
+            location.href="index.html";
+        });
+
+        $(".play").click(function () {
+            video.play();
+            $(".bg").hide();
+            $(".play").hide();
+        })
+    })
+</script>
+</body>
+</html>
