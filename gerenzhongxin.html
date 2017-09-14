@@ -133,7 +133,6 @@
     $(function () {
         //退出登录
         $(".tuichu_btn").click(function () {
-            alert(1)
             $(".login_out").fadeIn("fast");
             $(".nav").fadeOut("fast");
             $(".over_layer").show();
@@ -150,7 +149,7 @@
         });
         //修改资料
         $(".info").focus(function () {
-            $(".tuichu").hide();
+            $(".tuichu_btn").hide();
             $(".edit_btn").css("display","flex");
             var top=$(this).offset().top;
             $('.wrapper').animate({
@@ -159,11 +158,11 @@
             //$('.wrapper').css("top",-top)
     });
         $(".close").click(function () {
-            $(".tuichu").show();
+            $(".tuichu_btn").show();
             $(".edit_btn").css("display","none");
         });
         $(".sure").click(function () {
-            $(".tuichu").show();
+            $(".tuichu_btn").show();
             $(".edit_btn").css("display","none");
         });
         $(".info").blur(function () {

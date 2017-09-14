@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d6e54dc-ff25-4096-aed6-6fbbc5fc4015" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/idangerous.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/idangerous.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/choose_gongzhong.html" afterPath="$PROJECT_DIR$/choose_gongzhong.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/choose_gongzhong.css" afterPath="$PROJECT_DIR$/css/choose_gongzhong.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/gerenzhongxin.css" afterPath="$PROJECT_DIR$/css/gerenzhongxin.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gerenzhongxin.html" afterPath="$PROJECT_DIR$/gerenzhongxin.html" />
     </list>
     <ignored path="html5.iws" />
@@ -28,12 +26,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="choose_gongzhong.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="choose_gongzhong.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/choose_gongzhong.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            <state relative-caret-position="588">
+              <caret line="83" column="72" selection-start-line="83" selection-start-column="72" selection-end-line="83" selection-end-column="72" />
               <folding>
+                <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#8;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
@@ -43,21 +44,31 @@
       <file leaf-file-name="choose_gongzhong.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/choose_gongzhong.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="775">
+              <caret line="84" column="19" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gerenzhongxin.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gerenzhongxin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gerenzhongxin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
+            <state relative-caret-position="567">
+              <caret line="163" column="38" selection-start-line="163" selection-start-column="38" selection-end-line="163" selection-end-column="38" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gerenzhongxin.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/gerenzhongxin.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,14 +115,14 @@
         <option value="$PROJECT_DIR$/yunjianyi.html" />
         <option value="$PROJECT_DIR$/yunpaihang.html" />
         <option value="$PROJECT_DIR$/css/yunpaihang.css" />
-        <option value="$PROJECT_DIR$/css/gerenzhongxin.css" />
         <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/video2.html" />
         <option value="$PROJECT_DIR$/video.html" />
-        <option value="$PROJECT_DIR$/choose_gongzhong.html" />
-        <option value="$PROJECT_DIR$/css/choose_gongzhong.css" />
+        <option value="$PROJECT_DIR$/css/gerenzhongxin.css" />
         <option value="$PROJECT_DIR$/gerenzhongxin.html" />
+        <option value="$PROJECT_DIR$/css/choose_gongzhong.css" />
+        <option value="$PROJECT_DIR$/choose_gongzhong.html" />
       </list>
     </option>
   </component>
@@ -270,12 +281,12 @@
       <workItem from="1503047909600" duration="3000" />
       <workItem from="1505218057907" duration="4526000" />
       <workItem from="1505269830949" duration="13569000" />
-      <workItem from="1505355064361" duration="18773000" />
+      <workItem from="1505355064361" duration="20667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112288000" />
+    <option name="totallyTimeSpent" value="114182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -538,14 +549,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/gerenzhongxin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/yunpaihang.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
@@ -656,30 +659,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/choose_gongzhong.html">
+    <entry file="file://$PROJECT_DIR$/css/gerenzhongxin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/choose_gongzhong.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="320">
+          <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gerenzhongxin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
+        <state relative-caret-position="567">
+          <caret line="163" column="38" selection-start-line="163" selection-start-column="38" selection-end-line="163" selection-end-column="38" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/choose_gongzhong.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="84" column="19" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/choose_gongzhong.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="83" column="72" selection-start-line="83" selection-start-column="72" selection-end-line="83" selection-end-column="72" />
+          <folding>
+            <element signature="n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#8;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
