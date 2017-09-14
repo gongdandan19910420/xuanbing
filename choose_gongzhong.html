@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <title>练兵工种</title>
     <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/idangerous.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/choose_gongzhong.css">
 </head>
@@ -17,7 +18,21 @@
     </header>
     <h4 class="choose_title"><img src="images/choose_tishi.png"></h4>
     <div class="choose_con">
-        <p class="leiming">网络运营类</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="javascript:;">网络运营类</a></div>
+                <div class="swiper-slide"><a href="javascript:;">网络运营类</a></div>
+                <div class="swiper-slide"><a href="javascript:;">网络运营类</a></div>
+                <div class="swiper-slide"><a href="javascript:;">网络运营类</a></div>
+                <div class="swiper-slide"><a href="javascript:;">网络运营类</a></div>
+                <div class="swiper-slide"><a href="javascript:;">网络运营类</a></div>
+                <div class="swiper-slide"><a href="javascript:;">网络运营类</a></div>
+                <div class="swiper-slide"><a href="javascript:;">网络运营类</a></div>
+                <div class="swiper-slide"><a href="javascript:;">网络运营类</a></div>
+            </div>
+            <div class="pagination"></div>
+        </div>
+        <!--<p class="leiming">网络运营类</p>-->
         <ul>
             <li><a href="chuangguan.html"><img src="images/choose_img_01.png"><p>转炉炼钢工</p> </a></li>
             <li><a href="chuangguan.html"><img src="images/choose_img_02.png"><p>设备点检员</p> </a></li>
@@ -25,6 +40,9 @@
             <li><a href="chuangguan.html"><img src="images/choose_img_04.png"><p>内燃机车</p> </a></li>
             <li><a href="chuangguan.html"><img src="images/choose_img_05.png"><p>党史知识</p> </a></li>
             <li><a href="chuangguan.html"><img src="images/choose_img_06.png"><p>共青团</p> </a></li>
+            <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
+            <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
+            <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
             <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
             <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
             <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
@@ -62,12 +80,20 @@
 <script src="js/mui.min.js"></script>
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/nav_btn.js"></script>
+<script src="js/idangerous.js"></script>
 <script>
     $(function () {
         var length=$(".choose_con ul li").length;
         if(length%3 != 0){
             $(".peopel").show();
         }
+
+        var navSwiper = new Swiper('.swiper-container',{
+            pagination: '.pagination',
+            paginationClickable: true,
+            slidesPerView: 3,
+            spaceBetween: 10
+        })
     })
 </script>
 </body>

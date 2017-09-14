@@ -13,17 +13,27 @@
     position: relative;
     background: url("../images/gongzhong_juanzhou_03.png") no-repeat left top/100% 100%;
     padding-bottom: 17%;
+    max-height: 476px;
+    overflow: hidden;
 }
-.choose_con .leiming{
+.choose_con .swiper-container{
+    width: 76%;
+    overflow: hidden;
+    height: 42px;
+    line-height: 42px;
+    margin: 45px 0 0 12%;
+}
+.choose_con .swiper-slide a{
     font-size: 15px;
     color: #830505;
-    padding: 45px 0 0 12%;
 }
 .choose_con ul{
     padding: 10px 0 0;
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
+    max-height:340px;
+    overflow-y: auto;
 }
 .choose_con ul li{
     float: left;
