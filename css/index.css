@@ -6,10 +6,11 @@ a{
 }
 .mui-content{
     background: url("../images/index_bg_02.png") no-repeat left top/100% 100%;
+    overflow: hidden;
 }
 .top_txt{
     width: 100%;
-    margin-top: 25px;
+    margin-top: 5%;
     text-align: center;
     color: #a80000;
     font-size: 22px;
@@ -17,7 +18,7 @@ a{
 }
 .logo{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 5%;
     text-align: center;
 }
 .logo img{
@@ -26,17 +27,16 @@ a{
 .bot_txt{
     width: 100%;
     text-align: center;
-    margin: 20px auto 10px;
+    margin: 5% auto 2.5%;
 }
 .bot_txt img{
     width: 58.1%;
 }
 .qima{
-    width: 233px;
-    height: 185px;
+    width: 60%;
+    height: 32%;
     margin: 0 auto;
     position: relative;
-
 }
 .qima img{
     width: 100%;
@@ -50,7 +50,7 @@ a{
     opacity: 0.9;
 }
 .btn{
-    margin: 30px 0 0;
+    margin: 7.5% 0 0;
     text-align: center;
     width: 100%;
     z-index: 9;
@@ -139,7 +139,7 @@ a{
 }
 .login_in{
     overflow: hidden;
-    margin-top: 6px;
+    margin-top: 1%;
 }
 .denglu{
     font-size: 15px;
@@ -205,4 +205,34 @@ a{
     line-height: 40px;
     color: #830505;
     display: none;
+}
+.bot_nav{
+    margin-bottom: 0;
+}
+@media screen and (min-width: 420px){
+    .mui-content{
+        overflow-y: auto;
+    }
+    .login_in{
+        margin-top: 6px;
+    }
+    .top_txt{
+        margin-top: 25px;
+    }
+    .logo{
+        margin-top: 20px;
+    }
+    .bot_txt{
+        margin: 20px auto 10px;
+    }
+    .btn{
+        margin: 30px 0 0 0;
+    }
+    .qima{
+        width: 233px;
+        height: 185px;
+    }
+    .bot_nav{
+        margin-bottom: 10px;
+    }
 }

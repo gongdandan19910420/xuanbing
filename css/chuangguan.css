@@ -81,7 +81,7 @@ i{
 .cg_num ul{
     overflow: hidden;
     width: 91%;
-    margin: 20px auto 0;
+    margin: 5% auto 0;
     display: flex;
     justify-content: space-between;
 }
@@ -104,4 +104,9 @@ i{
     display: block;
     width: 50%;
     margin: 8px 0 0 21px;
+}
+@media screen and (min-width: 420px){
+    .cg_num ul{
+        margin: 20px auto 0;
+    }
 }
