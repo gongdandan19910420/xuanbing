@@ -110,3 +110,7 @@ i{
         margin: 20px auto 0;
     }
 }
+.bot_nav{
+    position: static;
+    margin-bottom: 10px;
+}

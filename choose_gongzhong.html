@@ -18,22 +18,44 @@
     </header>
     <h4 class="choose_title"><img src="images/choose_tishi.png"></h4>
     <div class="choose_con">
-        <!--<p class="leiming">网络运营类</p>-->
-        <ul class="gz active">
-            <li><a href="chuangguan.html"><img src="images/choose_img_01.png"><p>转炉炼钢工</p> </a></li>
-            <li><a href="chuangguan.html"><img src="images/choose_img_02.png"><p>设备点检员</p> </a></li>
-            <li><a href="chuangguan.html"><img src="images/choose_img_03.png"><p>金属轧制工</p> </a></li>
-            <li><a href="chuangguan.html"><img src="images/choose_img_04.png"><p>内燃机车</p> </a></li>
-            <li><a href="chuangguan.html"><img src="images/choose_img_05.png"><p>党史知识</p> </a></li>
-            <li><a href="chuangguan.html"><img src="images/choose_img_06.png"><p>共青团</p> </a></li>
-            <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
-            <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
-            <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
-            <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
-            <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
-            <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
-        </ul>
-        <div class="peopel"><img src="images/small_people_03.png"></div>
+        <div class="choose_g">
+            <div class="choose_list">
+                <p class="leiming">网络运营类</p>
+                <ul class="gz active">
+                    <li><a href="chuangguan.html"><img src="images/choose_img_01.png"><p>转炉炼钢工</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_02.png"><p>设备点检员</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_03.png"><p>金属轧制工</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_04.png"><p>内燃机车</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_05.png"><p>党史知识</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_06.png"><p>共青团</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
+                </ul>
+                <div class="peopel"><img src="images/small_people_03.png"></div>
+            </div>
+            <div class="choose_list">
+                <p class="leiming">网络运营类</p>
+                <ul class="gz active">
+                    <li><a href="chuangguan.html"><img src="images/choose_img_01.png"><p>转炉炼钢工</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_02.png"><p>设备点检员</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_03.png"><p>金属轧制工</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_04.png"><p>内燃机车</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_05.png"><p>党史知识</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_06.png"><p>共青团</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
+                    <li><a href="chuangguan.html"><img src="images/choose_img_07.png"><p>计算机</p> </a></li>
+                </ul>
+                <div class="peopel"><img src="images/small_people_03.png"></div>
+            </div>
+        </div>
+
     </div>
     <div class="bot_nav">
         <div class="yuan_btn">
@@ -70,21 +92,12 @@
 <script src="js/idangerous.js"></script>
 <script>
     $(function () {
-        var length=$(".choose_con ul li").length;
-        if(length%3 != 0){
-            $(".peopel").show();
-        }
-
-        var navSwiper = new Swiper('.swiper-container',{
-            pagination: '.pagination',
-            paginationClickable: true,
-            slidesPerView: 3,
-            spaceBetween: 10
-        })
-        $(".swiper-container").on("click",".swiper-slide",function () {
-            var index=$(this).index();
-            $(".gz").removeClass("active");
-            $(".gz").eq(index).addClass("active")
+        $(".choose_list").each(function () {
+            var length=$(this).find(".gz").children('li').length;
+            //console.log(length)
+            if(length%3 != 0){
+                $(this).find(".peopel").show();
+            }
         })
     })
 </script>

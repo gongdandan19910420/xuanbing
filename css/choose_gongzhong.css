@@ -12,27 +12,27 @@
     margin: 0 auto;
     position: relative;
     background: url("../images/gongzhong_juanzhou_03.png") no-repeat left top/100% 100%;
-    padding-bottom: 17%;
     max-height: 476px;
     overflow: hidden;
+    padding: 0 0 17% 0;
 }
-.choose_con .swiper-container{
-    width: 76%;
-    overflow: hidden;
-    height: 42px;
-    line-height: 42px;
-    margin: 45px 0 0 12%;
+.choose_g{
+    margin-top: 45px;
+    max-height: 345px;
+    overflow-y: auto;
 }
-.choose_con .swiper-slide a{
-    font-size: 15px;
+.choose_con .choose_list{
+    position: relative;
+}
+.choose_con .leiming{
+    margin: 0 0 0 12%;
     color: #830505;
+    font-size: 15px;
 }
 .choose_con ul{
     width: 80%;
-    margin: 50px auto 0;
+    margin: 10px auto 0;
     overflow: hidden;
-    max-height:340px;
-    overflow-y: auto;
 }
 .choose_con ul li{
     float: left;
@@ -58,7 +58,7 @@
     width:27%;
     position: absolute;
     bottom: 0;
-    right: 15%;
+    right: 10%;
     animation: move 2s infinite linear;
     -moz-animation: move 2s infinite linear;
     -webkit-animation: move 2s infinite linear;
@@ -73,9 +73,9 @@
     float: right;
 }
 @keyframes move {
-    0% {bottom: 15%;}
-    50%{bottom: 17%;}
-    100%{bottom:15%;}
+    0% {bottom: 3%;}
+    50%{bottom: 5%;}
+    100%{bottom:3%;}
 }
 .gz{
     display: none;
