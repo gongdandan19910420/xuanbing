@@ -206,29 +206,29 @@ a{
     display: none;
 }
 @media screen and (min-width: 420px){
-    .mui-content{
-        overflow-y: auto;
-    }
-    .login_in{
-        margin-top: 6px;
-    }
-    .top_txt{
-        margin-top: 25px;
-    }
-    .logo{
-        margin-top: 20px;
-    }
-    .bot_txt{
-        margin: 20px auto 10px;
-    }
-    .btn{
-        margin: 30px 0 0 0;
-    }
-    .qima{
-        width: 233px;
-        height: 185px;
-    }
-    .bot_nav{
-        margin-bottom: 10px;
-    }
+    /* .mui-content{
+         overflow-y: auto;
+     }
+   .login_in{
+         margin-top: 6px;
+     }
+     .top_txt{
+         margin-top: 25px;
+     }
+     .logo{
+         margin-top: 20px;
+     }
+     .bot_txt{
+         margin: 20px auto 10px;
+     }
+     .btn{
+         margin: 30px 0 0 0;
+     }
+     .qima{
+         width: 233px;
+         height: 185px;
+     }
+     .bot_nav{
+         margin-bottom: 10px;
+     }*/
 }

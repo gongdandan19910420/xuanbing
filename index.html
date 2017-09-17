@@ -95,6 +95,7 @@
 <script src="js/nav_btn.js"></script>
 <script>
     $(function () {
+        $(".qima").height($(".qima img").height())
         $(".login_in").click(function () {
             $(".login_in_box").fadeIn("fast");
             $(".over_layer").show();
@@ -118,7 +119,7 @@
         $(".login_in_box input").focus(function () {
             $(".tishi").hide();
         })
-        $(".qima").height($(".qima img").height())
+
     })
 </script>
 </body>
