@@ -32,8 +32,8 @@ a{
     width: 58.1%;
 }
 .qima{
-    width: 233px;
-    height: 185px;
+    width: 60%;
+    /*height: 185px;*/
     margin: 0 auto;
     position: relative;
 }
@@ -49,7 +49,7 @@ a{
     opacity: 0.9;
 }
 .btn{
-    margin: 7.5% 0 0;
+    margin: 7.5% 0 15%;
     text-align: center;
     width: 100%;
     z-index: 9;
@@ -63,8 +63,7 @@ a{
     width: 100%;
 }
 .bot_nav{
-  /*  padding: 30px 2% 0;*/
-    position: static;
+    padding: 30px 2% 0;
 }
 @keyframes movecenter
 {
@@ -205,9 +204,6 @@ a{
     line-height: 40px;
     color: #830505;
     display: none;
-}
-.bot_nav{
-    margin-bottom: 10px;
 }
 @media screen and (min-width: 420px){
     .mui-content{
