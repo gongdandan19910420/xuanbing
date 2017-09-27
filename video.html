@@ -21,12 +21,7 @@
             display: block;
             margin: 0 auto;
         }
-        @media screen and (min-width: 420px){
-            #video img{
-                height:100%;
-                width: auto;
-            }
-        }
+
         #video li{
             position: absolute;
             left: 0;
@@ -74,13 +69,22 @@
             font-size: 14px;
             color: #fff;
         }
+        @media screen and (min-width: 420px){
+            #video img{
+                height:100%;
+                width: auto;
+            }
+            .tiaoguo a{
+                color: #31b100;
+            }
+        }
     </style>
 </head>
 <body>
 <div class="music"><audio src="images/music.wav" autoplay id="music"></audio></div>
 <div class="video">
     <div class="tiaoguo"><a href="index.html">跳过动画></a> </div>
-    <div id="video"><img src="images/gif2.gif"></div>
+    <div id="video"><img src="images/gif3.gif"></div>
 </div>
 <script src="js/jquery-1.9.1.min.js"></script>
 <script>
