@@ -89,18 +89,15 @@
 <script src="js/jquery-1.9.1.min.js"></script>
 <script>
     $(function () {
-        $.ajax({
+       /* $.ajax({
             type: "GET",
             url: "images/giftu.gif",
             dataType: "text",
             beforeSend :function(xmlHttp){
                 xmlHttp.setRequestHeader("If-Modified-Since","0");
                 xmlHttp.setRequestHeader("Cache-Control","no-cache");
-            },
-            complete:function () {
-               // $("#gif").attr("src","images/giftu.gif");
             }
-        });
+        });*/
         //var audioUrl = "images/music.wav";//音频路径
 
         var timer = setInterval(function(){
@@ -114,11 +111,11 @@
          $("#video").fadeIn("fast");
          $(".first_img").hide();
          setTimeout(function () {
-         $("#video").hide();
-         $(".last_img").show();
-         setTimeout(function () {
-         location.href="index.html";
-         },500)
+             $("#video").hide();
+             $(".last_img").show();
+             setTimeout(function () {
+             location.href="index.html";
+             },500)
          },15000)
 
 
