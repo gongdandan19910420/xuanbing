@@ -77,7 +77,7 @@
     <div class="tiaoguo"><a href="index.html">跳过动画></a> </div>
     <div class="first_img"><img src="images/two.png" class="bg"> </div>
     <div class="last_img"><img src="images/first.png" class="bg"> </div>
-    <div id="video"><img src="images/giftu.gif" id="gif"></div>
+    <div id="video"><img src="" id="gif"></div>
 </div>
 <script src="js/jquery-1.9.1.min.js"></script>
 <script>
@@ -89,10 +89,25 @@
             beforeSend :function(xmlHttp){
                 xmlHttp.setRequestHeader("If-Modified-Since","0");
                 xmlHttp.setRequestHeader("Cache-Control","no-cache");
-            }});
+            },
+            complete:function () {
+                var oMusic=document.getElementById('music');
+                oMusic.play();
+                $("#gif").attr("src","images/giftu.gif");
+                $("#video").fadeIn("fast");
+                $(".first_img").hide();
+                setTimeout(function () {
+                    $("#video").hide();
+                    $(".last_img").show();
+                    setTimeout(function () {
+                        location.href="index.html";
+                    },500)
+                },15000)
+            }
+        });
         //var audioUrl = "images/music.wav";//音频路径
 
-        var timer = setInterval(function(){
+       /* var timer = setInterval(function(){
             if (document.getElementById('gif').complete){
                 clearInterval(timer);
                 //alert(1)
@@ -109,18 +124,13 @@
                         location.href="index.html";
                     },500)
                 },15000)
-               /* loadAudio(audioUrl,function(){
+               /!* loadAudio(audioUrl,function(){
                     $('#music').attr("src",audioUrl);
 
-                });*/
+                });*!/
 
             }
-        }, 10);
-        function loadAudio(src, callback) {
-            var audio = new Audio(src);
-            audio.onloadedmetadata = callback;
-            audio.src = src;
-        }
+        }, 10);*/
     })
 </script>
 </body>
