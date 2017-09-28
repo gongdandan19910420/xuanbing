@@ -76,67 +76,7 @@
             }
         }
     </style>
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script>
-        $(function () {
-            $.ajax({
-                type: "GET",
-                url: "images/giftu.gif",
-                dataType: "text",
-                beforeSend :function(xmlHttp){
-                    xmlHttp.setRequestHeader("If-Modified-Since","0");
-                    xmlHttp.setRequestHeader("Cache-Control","no-cache");
-                },
-                complete:function () {
-                    $("#gif").attr("src","images/giftu.gif");
-                    var timer = setInterval(function(){
-                        if (document.getElementById('gif').complete){
-                            clearInterval(timer);
-                            //alert(1)
-                            console.log(document.getElementById('gif').complete);
-                            //调用方法
-                            var oMusic=document.getElementById('music');
-                            oMusic.play();
-                            $("#video").fadeIn("fast");
-                            $(".first_img").hide();
-                            setTimeout(function () {
-                                $("#video").hide();
-                                $(".last_img").show();
-                                setTimeout(function () {
-                                    location.href="index.html";
-                                },500)
-                            },15000)
 
-
-                        }
-                    }, 10);
-                }
-            });
-            //var audioUrl = "images/music.wav";//音频路径
-
-             /*var timer = setInterval(function(){
-             if (document.getElementById('gif').complete){
-                 clearInterval(timer);
-                 //alert(1)
-                 console.log(document.getElementById('gif').complete);
-                 //调用方法
-                 var oMusic=document.getElementById('music');
-                 oMusic.play();
-                 $("#video").fadeIn("fast");
-                 $(".first_img").hide();
-                 setTimeout(function () {
-                 $("#video").hide();
-                 $(".last_img").show();
-                 setTimeout(function () {
-                 location.href="index.html";
-                 },500)
-             },15000)
-
-
-             }
-             }, 10);*/
-        })
-    </script>
 </head>
 <body>
 <div class="music"><audio src="images/music.wav" preload id="music"></audio></div>
@@ -146,6 +86,66 @@
     <div class="last_img"><img src="images/first.png" class="bg"> </div>
     <div id="video"><img src="" id="gif"></div>
 </div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+    $(function () {
+        $.ajax({
+            type: "GET",
+            url: "images/giftu.gif",
+            dataType: "text",
+            beforeSend :function(xmlHttp){
+                xmlHttp.setRequestHeader("If-Modified-Since","0");
+                xmlHttp.setRequestHeader("Cache-Control","no-cache");
+            },
+            complete:function () {
+                $("#gif").attr("src","images/giftu.gif");
+                var timer = setInterval(function(){
+                    if (document.getElementById('gif').complete){
+                        clearInterval(timer);
+                        //alert(1)
+                        console.log(document.getElementById('gif').complete);
+                        //调用方法
+                        var oMusic=document.getElementById('music');
+                        oMusic.play();
+                        $("#video").fadeIn("fast");
+                        $(".first_img").hide();
+                        setTimeout(function () {
+                            $("#video").hide();
+                            $(".last_img").show();
+                            setTimeout(function () {
+                                location.href="index.html";
+                            },500)
+                        },15000)
 
+
+                    }
+                }, 10);
+            }
+        });
+        //var audioUrl = "images/music.wav";//音频路径
+
+        /*var timer = setInterval(function(){
+         if (document.getElementById('gif').complete){
+         clearInterval(timer);
+         //alert(1)
+         console.log(document.getElementById('gif').complete);
+         //调用方法
+         var oMusic=document.getElementById('music');
+         oMusic.play();
+         $("#video").fadeIn("fast");
+         $(".first_img").hide();
+         setTimeout(function () {
+         $("#video").hide();
+         $(".last_img").show();
+         setTimeout(function () {
+         location.href="index.html";
+         },500)
+         },15000)
+
+
+         }
+         }, 10);*/
+    })
+</script>
 </body>
 </html>
