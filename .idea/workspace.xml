@@ -26,8 +26,8 @@
       <file leaf-file-name="video.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/video.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="112" column="33" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
+            <state relative-caret-position="351">
+              <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -294,12 +294,12 @@
       <workItem from="1506421206112" duration="2000" />
       <workItem from="1506421428845" duration="5928000" />
       <workItem from="1506478120173" duration="17224000" />
-      <workItem from="1506563619234" duration="7361000" />
+      <workItem from="1506563619234" duration="7520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145622000" />
+    <option name="totallyTimeSpent" value="145781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -681,8 +681,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/video.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="112" column="33" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
+        <state relative-caret-position="351">
+          <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
           </folding>
