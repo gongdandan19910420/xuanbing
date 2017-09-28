@@ -72,7 +72,7 @@
     </style>
 </head>
 <body>
-<div class="music"><audio src="" preload id="music"></audio></div>
+<div class="music"><audio src="images/music.wav" preload id="music"></audio></div>
 <div class="video">
     <div class="tiaoguo"><a href="index.html">跳过动画></a> </div>
     <div class="first_img"><img src="images/two.png" class="bg"> </div>
@@ -90,7 +90,7 @@
                 xmlHttp.setRequestHeader("If-Modified-Since","0");
                 xmlHttp.setRequestHeader("Cache-Control","no-cache");
             }});
-        var audioUrl = "images/music.wav";//音频路径
+        //var audioUrl = "images/music.wav";//音频路径
 
         var timer = setInterval(function(){
             if (document.getElementById('gif').complete){
@@ -98,20 +98,21 @@
                 //alert(1)
                 console.log(document.getElementById('gif').complete);
                 //调用方法
-                loadAudio(audioUrl,function(){
-                    $('#music').attr("src",audioUrl);
-                    var oMusic=document.getElementById('music');
-                    oMusic.play();
-                    $("#video").fadeIn("fast");
-                    $(".first_img").hide();
+                var oMusic=document.getElementById('music');
+                oMusic.play();
+                $("#video").fadeIn("fast");
+                $(".first_img").hide();
+                setTimeout(function () {
+                    $("#video").hide();
+                    $(".last_img").show();
                     setTimeout(function () {
-                        $("#video").hide();
-                        $(".last_img").show();
-                        setTimeout(function () {
-                            location.href="index.html";
-                        },500)
-                    },15000)
-                });
+                        location.href="index.html";
+                    },500)
+                },15000)
+               /* loadAudio(audioUrl,function(){
+                    $('#music').attr("src",audioUrl);
+
+                });*/
 
             }
         }, 10);
